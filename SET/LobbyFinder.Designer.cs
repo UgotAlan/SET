@@ -1,5 +1,9 @@
 ﻿namespace SET
 {
+    /// <summary>
+    /// This partial class contains all the information
+    /// related to the LobbyFinder form.
+    /// </summary>
     partial class LobbyFinder
     {
         /// <summary>
@@ -17,6 +21,7 @@
             {
                 components.Dispose();
             }
+
             base.Dispose(disposing);
         }
 

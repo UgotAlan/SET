@@ -1,5 +1,9 @@
 ﻿namespace SET
 {
+    /// <summary>
+    /// This partial class contains all information
+    /// related to the Lobby form.
+    /// </summary>
     partial class Lobby
     {
         /// <summary>
@@ -17,6 +21,7 @@
             {
                 components.Dispose();
             }
+
             base.Dispose(disposing);
         }
 
