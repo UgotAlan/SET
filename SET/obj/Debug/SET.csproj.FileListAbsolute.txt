@@ -7,17 +7,13 @@ c:\users\ldsag_000\documents\visual studio 2015\Projects\SET\SET\obj\Debug\SET.P
 c:\users\ldsag_000\documents\visual studio 2015\Projects\SET\SET\obj\Debug\SET.csproj.GenerateResource.Cache
 c:\users\ldsag_000\documents\visual studio 2015\Projects\SET\SET\obj\Debug\SET.exe
 c:\users\ldsag_000\documents\visual studio 2015\Projects\SET\SET\obj\Debug\SET.pdb
-C:\Users\ldsag_000\Documents\SET\SET\bin\Debug\SET.exe.config
-C:\Users\ldsag_000\Documents\SET\SET\obj\Debug\SET.exe
-C:\Users\ldsag_000\Documents\SET\SET\obj\Debug\SET.pdb
-D:\Personal\School\Second Year\CS 3450\Set\SET\bin\Debug\SET.exe.config
-D:\Personal\School\Second Year\CS 3450\Set\SET\bin\Debug\SET.exe
-D:\Personal\School\Second Year\CS 3450\Set\SET\bin\Debug\SET.pdb
-D:\Personal\School\Second Year\CS 3450\Set\SET\obj\Debug\SET.csprojResolveAssemblyReference.cache
-D:\Personal\School\Second Year\CS 3450\Set\SET\obj\Debug\SET.Form1.resources
-D:\Personal\School\Second Year\CS 3450\Set\SET\obj\Debug\SET.Properties.Resources.resources
-D:\Personal\School\Second Year\CS 3450\Set\SET\obj\Debug\SET.csproj.GenerateResource.Cache
-D:\Personal\School\Second Year\CS 3450\Set\SET\obj\Debug\SET.exe
-D:\Personal\School\Second Year\CS 3450\Set\SET\obj\Debug\SET.pdb
-D:\Personal\School\Second Year\CS 3450\SET\SET\obj\Debug\SET.LobbyFinder.resources
+D:\Personal\School\Second Year\CS 3450\SET\SET\bin\Debug\SET.exe.config
+D:\Personal\School\Second Year\CS 3450\SET\SET\bin\Debug\SET.exe
+D:\Personal\School\Second Year\CS 3450\SET\SET\bin\Debug\SET.pdb
+D:\Personal\School\Second Year\CS 3450\SET\SET\obj\Debug\SET.csprojResolveAssemblyReference.cache
 D:\Personal\School\Second Year\CS 3450\SET\SET\obj\Debug\SET.Lobby.resources
+D:\Personal\School\Second Year\CS 3450\SET\SET\obj\Debug\SET.LobbyFinder.resources
+D:\Personal\School\Second Year\CS 3450\SET\SET\obj\Debug\SET.Properties.Resources.resources
+D:\Personal\School\Second Year\CS 3450\SET\SET\obj\Debug\SET.csproj.GenerateResource.Cache
+D:\Personal\School\Second Year\CS 3450\SET\SET\obj\Debug\SET.exe
+D:\Personal\School\Second Year\CS 3450\SET\SET\obj\Debug\SET.pdb

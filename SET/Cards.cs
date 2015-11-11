@@ -1,26 +1,60 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SET
+﻿namespace SET
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    /// <summary>
+    /// This class contains variables which can hold every element
+    /// needed to properly describe a card of the game SET.
+    /// All variables are public and contain getters/setters.
+    /// </summary>
     public class Cards
     {
-        public string image { get { return _image; } set { _image = value; } }
-        private string _image; 
-        public string color { get { return _color; } set { _color = value; } }
-        private string _color;
-        public string shade { get { return _shade; } set { _shade = value; } }
-        private string _shade;
-        public string shape { get { return _shape; } set { _shape = value; } }
-        private string _shape;
-        public int number { get { return _number; } set { _number = value; } }
-        private int _number;
-        public bool inplay { get { return _inplay; } set { _inplay = value; } }
-        private bool _inplay;
-        public bool beenPlayed { get { return _beenPlayed; } set { _beenPlayed = value; } }
-        private bool _beenPlayed;
+        /// <summary>
+        /// This variable contains a string for the image path 
+        /// to the card's visual.
+        /// </summary>
+        public string Image { get; set; }
+
+        /// <summary>
+        /// This variable contains a string for the color
+        /// of the card.
+        /// </summary>
+        public string Color { get; set; }
+
+        /// <summary>
+        /// This variable contains a string for the shade
+        /// of the card.
+        /// </summary>
+        public string Shade { get; set; }
+
+        /// <summary>
+        /// This variable contains a string for the shape
+        /// of the card.
+        /// </summary>
+        public string Shape { get; set; }
+
+        /// <summary>
+        /// This variable contains an integer for the
+        /// number of shapes present on the card.
+        /// </summary>
+        public int Number { get; set; }
+
+        /// <summary>
+        /// This variable contains a bool so the card
+        /// knows whether or not it is currently on the
+        /// game board.
+        /// </summary>
+        public bool Inplay { get; set; }
+
+        /// <summary>
+        /// This variable contains a bool so the card
+        /// knows whether or not it has been played
+        /// since the last time the deck has been shuffled.
+        /// </summary>
+        public bool BeenPlayed { get; set; }
     }
 }
