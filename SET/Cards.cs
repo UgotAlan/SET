@@ -14,6 +14,22 @@
     public class Cards
     {
         /// <summary>
+        /// Initializes a new instance of the Cards class.
+        /// This sets every string variable to empty, each 
+        /// integer to 0, and each bool to false.
+        /// </summary>
+        public Cards()
+        {
+            Image = string.Empty;
+            Color = string.Empty;
+            Shade = string.Empty;
+            Shape = string.Empty;
+            Number = 0;
+            Inplay = false;
+            BeenPlayed = false;
+        }
+
+        /// <summary>
         /// This variable contains a string for the image path 
         /// to the card's visual.
         /// </summary>
