@@ -1,0 +1,9 @@
+c:\users\mikaila\documents\visual studio 2015\Projects\set_gameboard\set_gameboard\bin\Debug\set_gameboard.exe.config
+c:\users\mikaila\documents\visual studio 2015\Projects\set_gameboard\set_gameboard\bin\Debug\set_gameboard.exe
+c:\users\mikaila\documents\visual studio 2015\Projects\set_gameboard\set_gameboard\bin\Debug\set_gameboard.pdb
+c:\users\mikaila\documents\visual studio 2015\Projects\set_gameboard\set_gameboard\obj\Debug\set_gameboard.csprojResolveAssemblyReference.cache
+c:\users\mikaila\documents\visual studio 2015\Projects\set_gameboard\set_gameboard\obj\Debug\set_gameboard.Properties.Resources.resources
+c:\users\mikaila\documents\visual studio 2015\Projects\set_gameboard\set_gameboard\obj\Debug\set_gameboard.csproj.GenerateResource.Cache
+c:\users\mikaila\documents\visual studio 2015\Projects\set_gameboard\set_gameboard\obj\Debug\set_gameboard.exe
+c:\users\mikaila\documents\visual studio 2015\Projects\set_gameboard\set_gameboard\obj\Debug\set_gameboard.pdb
+c:\users\mikaila\documents\visual studio 2015\Projects\set_gameboard\set_gameboard\obj\Debug\set_gameboard.Set.resources
