@@ -17,3 +17,4 @@ D:\Personal\School\Second Year\CS 3450\SET\SET\obj\Debug\SET.Properties.Resource
 D:\Personal\School\Second Year\CS 3450\SET\SET\obj\Debug\SET.csproj.GenerateResource.Cache
 D:\Personal\School\Second Year\CS 3450\SET\SET\obj\Debug\SET.exe
 D:\Personal\School\Second Year\CS 3450\SET\SET\obj\Debug\SET.pdb
+D:\Personal\School\Second Year\CS 3450\SET\SET\obj\Debug\SET.MainMenu.resources

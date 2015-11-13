@@ -36,9 +36,9 @@
             this.lobbyList = new System.Windows.Forms.ListBox();
             this.lobbyNameLabel = new System.Windows.Forms.Label();
             this.playersInLobbyLabel = new System.Windows.Forms.Label();
-            this.joinLobbyButton = new System.Windows.Forms.Button();
-            this.createLobbyButton = new System.Windows.Forms.Button();
-            this.exitLobbyFinderButton = new System.Windows.Forms.Button();
+            this.joinLabel = new System.Windows.Forms.Label();
+            this.createLabel = new System.Windows.Forms.Label();
+            this.exitLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lobbyList
@@ -47,6 +47,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lobbyList.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.lobbyList.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lobbyList.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lobbyList.FormattingEnabled = true;
             this.lobbyList.ItemHeight = 33;
@@ -74,8 +75,12 @@
             // 
             // lobbyNameLabel
             // 
+            this.lobbyNameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lobbyNameLabel.AutoSize = true;
             this.lobbyNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lobbyNameLabel.ForeColor = System.Drawing.Color.White;
             this.lobbyNameLabel.Location = new System.Drawing.Point(205, 88);
             this.lobbyNameLabel.Name = "lobbyNameLabel";
             this.lobbyNameLabel.Size = new System.Drawing.Size(185, 32);
@@ -84,57 +89,81 @@
             // 
             // playersInLobbyLabel
             // 
-            this.playersInLobbyLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.playersInLobbyLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.playersInLobbyLabel.AutoSize = true;
             this.playersInLobbyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playersInLobbyLabel.ForeColor = System.Drawing.Color.White;
             this.playersInLobbyLabel.Location = new System.Drawing.Point(558, 88);
             this.playersInLobbyLabel.Name = "playersInLobbyLabel";
             this.playersInLobbyLabel.Size = new System.Drawing.Size(131, 32);
             this.playersInLobbyLabel.TabIndex = 2;
             this.playersInLobbyLabel.Text = "In Lobby";
             // 
-            // joinLobbyButton
+            // joinLabel
             // 
-            this.joinLobbyButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.joinLobbyButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.joinLobbyButton.Location = new System.Drawing.Point(211, 464);
-            this.joinLobbyButton.Name = "joinLobbyButton";
-            this.joinLobbyButton.Size = new System.Drawing.Size(111, 44);
-            this.joinLobbyButton.TabIndex = 3;
-            this.joinLobbyButton.Text = "Join";
-            this.joinLobbyButton.UseVisualStyleBackColor = true;
+            this.joinLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.joinLabel.AutoSize = true;
+            this.joinLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.joinLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.joinLabel.ForeColor = System.Drawing.Color.White;
+            this.joinLabel.Location = new System.Drawing.Point(205, 460);
+            this.joinLabel.Name = "joinLabel";
+            this.joinLabel.Size = new System.Drawing.Size(71, 36);
+            this.joinLabel.TabIndex = 7;
+            this.joinLabel.Text = "Join";
+            this.joinLabel.Click += new System.EventHandler(this.JoinLabelClick);
+            this.joinLabel.MouseEnter += new System.EventHandler(this.JoinLabelMouseEnter);
+            this.joinLabel.MouseLeave += new System.EventHandler(this.JoinLabelMouseEnter);
             // 
-            // createLobbyButton
+            // createLabel
             // 
-            this.createLobbyButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.createLobbyButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.createLobbyButton.Location = new System.Drawing.Point(379, 464);
-            this.createLobbyButton.Name = "createLobbyButton";
-            this.createLobbyButton.Size = new System.Drawing.Size(119, 44);
-            this.createLobbyButton.TabIndex = 5;
-            this.createLobbyButton.Text = "Create";
-            this.createLobbyButton.UseVisualStyleBackColor = true;
+            this.createLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.createLabel.AutoSize = true;
+            this.createLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.createLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.createLabel.ForeColor = System.Drawing.Color.White;
+            this.createLabel.Location = new System.Drawing.Point(387, 460);
+            this.createLabel.Name = "createLabel";
+            this.createLabel.Size = new System.Drawing.Size(102, 36);
+            this.createLabel.TabIndex = 8;
+            this.createLabel.Text = "Create";
+            this.createLabel.Click += new System.EventHandler(this.CreateLabelClick);
+            this.createLabel.MouseEnter += new System.EventHandler(this.CreateLabelMouseEnter);
+            this.createLabel.MouseLeave += new System.EventHandler(this.CreateLabelMouseLeave);
             // 
-            // exitLobbyFinderButton
+            // exitLabel
             // 
-            this.exitLobbyFinderButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.exitLobbyFinderButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitLobbyFinderButton.Location = new System.Drawing.Point(552, 464);
-            this.exitLobbyFinderButton.Name = "exitLobbyFinderButton";
-            this.exitLobbyFinderButton.Size = new System.Drawing.Size(119, 44);
-            this.exitLobbyFinderButton.TabIndex = 6;
-            this.exitLobbyFinderButton.Text = "Exit";
-            this.exitLobbyFinderButton.UseVisualStyleBackColor = true;
+            this.exitLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.exitLabel.AutoSize = true;
+            this.exitLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exitLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.exitLabel.ForeColor = System.Drawing.Color.White;
+            this.exitLabel.Location = new System.Drawing.Point(606, 460);
+            this.exitLabel.Name = "exitLabel";
+            this.exitLabel.Size = new System.Drawing.Size(65, 36);
+            this.exitLabel.TabIndex = 9;
+            this.exitLabel.Text = "Exit";
+            this.exitLabel.Click += new System.EventHandler(this.ExitLabelClick);
+            this.exitLabel.MouseEnter += new System.EventHandler(this.ExitLabelMouseEnter);
+            this.exitLabel.MouseLeave += new System.EventHandler(this.ExitLabelMouseLeave);
             // 
             // LobbyFinder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(882, 655);
-            this.Controls.Add(this.exitLobbyFinderButton);
-            this.Controls.Add(this.createLobbyButton);
-            this.Controls.Add(this.joinLobbyButton);
+            this.Controls.Add(this.exitLabel);
+            this.Controls.Add(this.createLabel);
+            this.Controls.Add(this.joinLabel);
             this.Controls.Add(this.playersInLobbyLabel);
             this.Controls.Add(this.lobbyNameLabel);
             this.Controls.Add(this.lobbyList);
@@ -152,8 +181,8 @@
         private System.Windows.Forms.ListBox lobbyList;
         private System.Windows.Forms.Label lobbyNameLabel;
         private System.Windows.Forms.Label playersInLobbyLabel;
-        private System.Windows.Forms.Button joinLobbyButton;
-        private System.Windows.Forms.Button createLobbyButton;
-        private System.Windows.Forms.Button exitLobbyFinderButton;
+        private System.Windows.Forms.Label joinLabel;
+        private System.Windows.Forms.Label createLabel;
+        private System.Windows.Forms.Label exitLabel;
     }
 }

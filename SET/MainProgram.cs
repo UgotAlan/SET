@@ -6,7 +6,7 @@
     using System.Threading.Tasks;
     using System.Windows.Forms;
     
-    static class Program
+    static class MainProgram
     {
         /// <summary>
         /// The main entry point for the application.
@@ -16,8 +16,10 @@
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new MainMenu());
             Application.Run(new LobbyFinder());
             Application.Run(new Lobby());
+            Application.Run(new GameBoard());
         }
     }
 }

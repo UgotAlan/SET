@@ -9,110 +9,110 @@
     using System.Text;
     using System.Threading.Tasks;
     using System.Windows.Forms;
-    
+
     /// <summary>
-    /// This Form displays a list of lobbies able to be
-    /// joined by the user. The User can join an existing
-    /// lobby, create one, or exit to the main menu.
+    /// This Form displays the GameBoard where
+    /// the user will be able to interact with
+    /// the game, along with other users.
     /// </summary>
-    public partial class LobbyFinder : Form
+    public partial class GameBoard : Form
     {
         /// <summary>
-        /// Initializes a new instance of the LobbyFinder class.
+        /// Initializes a new instance of the GameBoard class.
         /// </summary>
-        public LobbyFinder()
+        public GameBoard()
         {
             InitializeComponent();
         }
 
         /// <summary>
-        /// Event handler for user click on joinLabel.
+        /// Event handler for user clicking the button labeled set.
         /// </summary>
         /// <param name="sender">The parameter is not used.</param>
         /// <param name="e">The parameter is not used.</param>
-        private void JoinLabelClick(object sender, EventArgs e)
+        private void SetButtonClick(object sender, EventArgs e)
         {
-            // Logic for joining a lobby.
+            // Set Logic
         }
 
         /// <summary>
-        /// Event handler for user click on createLabel.
+        /// Event handler for user's cursor entering the button labeled set.
         /// </summary>
         /// <param name="sender">The parameter is not used.</param>
         /// <param name="e">The parameter is not used.</param>
-        private void CreateLabelClick(object sender, EventArgs e)
+        private void SetButtonMouseOver(object sender, EventArgs e)
         {
-            // Logic for creating a lobby.
+            setButton.BackColor = Color.Gold;
         }
 
         /// <summary>
-        /// Event handler for user click on exitLabel.
+        /// Event handler for user's cursor leaving the button labeled set.
         /// </summary>
         /// <param name="sender">The parameter is not used.</param>
         /// <param name="e">The parameter is not used.</param>
-        private void ExitLabelClick(object sender, EventArgs e)
+        private void SetButtonMouseLeave(object sender, EventArgs e)
         {
-            // Logic for going back to main menu
+            setButton.BackColor = Color.Goldenrod;
         }
 
         /// <summary>
-        /// Event handler for user hovering over joinLabel.
+        /// Event handler for user click the button labeled options.
         /// </summary>
         /// <param name="sender">The parameter is not used.</param>
         /// <param name="e">The parameter is not used.</param>
-        private void JoinLabelMouseEnter(object sender, EventArgs e)
+        private void OptionsButtonClick(object sender, EventArgs e)
         {
-            joinLabel.ForeColor = Color.LightGray;
+            // Bring up options dialog
         }
 
         /// <summary>
-        /// Event handler for user leaving joinLabel.
+        /// Event handler for user click on the button labeled exit.
         /// </summary>
         /// <param name="sender">The parameter is not used.</param>
         /// <param name="e">The parameter is not used.</param>
-        private void JoinLabelMouseLeave(object sender, EventArgs e)
+        private void ExitButtonClick(object sender, EventArgs e)
         {
-            joinLabel.ForeColor = Color.White;
+            // Bring up exit dialog
         }
 
         /// <summary>
-        /// Event handler for user hovering over createLabel.
+        /// Event handler for user's cursor entering the button labeled options.
         /// </summary>
         /// <param name="sender">The parameter is not used.</param>
         /// <param name="e">The parameter is not used.</param>
-        private void CreateLabelMouseEnter(object sender, EventArgs e)
+        private void OptionsButtonMouseOver(object sender, EventArgs e)
         {
-            createLabel.ForeColor = Color.LightGray;
+            optionsButton.ForeColor = Color.LightGray;
         }
 
         /// <summary>
-        /// Event handler for user leaving createLabel.
+        /// Event handler for user's cursor leaving the button labeled options.
         /// </summary>
         /// <param name="sender">The parameter is not used.</param>
         /// <param name="e">The parameter is not used.</param>
-        private void CreateLabelMouseLeave(object sender, EventArgs e)
+        private void OptionsButtonMouseLeave(object sender, EventArgs e)
         {
-            createLabel.ForeColor = Color.White;
+            optionsButton.ForeColor = Color.White;
         }
 
         /// <summary>
-        /// Event handler for user hovering over exitLabel.
+        /// Event handler for user's cursor entering the button labeled exit.
         /// </summary>
         /// <param name="sender">The parameter is not used.</param>
         /// <param name="e">The parameter is not used.</param>
-        private void ExitLabelMouseEnter(object sender, EventArgs e)
+        private void ExitButtonMouseEnter(object sender, EventArgs e)
         {
-            exitLabel.ForeColor = Color.LightGray;
+            exitButton.ForeColor = Color.LightGray;
         }
 
         /// <summary>
-        /// Event handler for user leaving exitLabel.
+        /// Event handler for user's cursor leaving the button labeled exit.
         /// </summary>
         /// <param name="sender">The parameter is not used.</param>
         /// <param name="e">The parameter is not used.</param>
-        private void ExitLabelMouseLeave(object sender, EventArgs e)
+        private void ExitButtonMouseLeave(object sender, EventArgs e)
         {
-            exitLabel.ForeColor = Color.White;
+            exitButton.ForeColor = Color.White;
         }
     }
 }
