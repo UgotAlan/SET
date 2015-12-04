@@ -1,5 +1,4 @@
-// hi
-﻿namespace SET
+namespace SET
 {
     using System;
     using System.Collections.Generic;
