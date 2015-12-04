@@ -29,7 +29,7 @@
         }
 
         /// <summary>
-        /// This variable contains a bool to know
+        /// This variable contains a boolean to know
         /// if a player is the host.
         /// </summary>
         public bool IsHost { get; set; }
@@ -47,7 +47,7 @@
         public List<List<Cards>> SetsMade { get; set; }
 
         /// <summary>
-        /// This variable contains a bool to know
+        /// This variable contains a boolean to know
         /// if a player has muted the game.
         /// </summary>
         public bool Mute { get; set; }

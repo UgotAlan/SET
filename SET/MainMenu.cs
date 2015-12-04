@@ -4,6 +4,7 @@
     using System.Collections.Generic;
     using System.ComponentModel;
     using System.Data;
+    using System.Diagnostics;
     using System.Drawing;
     using System.Linq;
     using System.Text;
@@ -41,24 +42,54 @@
 
         private void MultiPlayerLabel_Click(object sender, EventArgs e)
         {
-            // hide main menu
-            this.Hide();
+            // Test Ping and Ram. If both pass, hide main menu and make lobby finder form.
+            TestPingAndRam pingRamTest = new TestPingAndRam();
+            long max_ping = 300;
+            string ip = "www.google.com";
+            var ramC = new PerformanceCounter("Memory", "Available MBytes");
 
-            // make lobby finder form.
-            LobbyFinder lobbyFinder = new LobbyFinder();
-            lobbyFinder.ShowDialog();
-            this.Show();
+            if (pingRamTest.CheckPing(max_ping, ip) == true)
+            {
+                if (pingRamTest.CheckRam(ramC.NextValue()) == true)
+                {
+                    // hide main menu
+                    this.Hide();
+
+                    // make lobby finder form.
+                    LobbyFinder lobbyFinder = new LobbyFinder();
+                    lobbyFinder.ShowDialog();
+                    this.Show(); 
+                }
+                else
+                {
+                    MessageBox.Show("NOT ENOUGH AVAILABLE RAM MEMORY!!!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("NETWORK CONNECTION FAILED!!! ERROR(Ping Test)");
+            }
         }
 
         private void SinglePlayerLabel_Click(object sender, EventArgs e)
         {
-            // hide the main menu
-            this.Hide();
+            TestPingAndRam ramTest = new TestPingAndRam();
+            var ramC = new PerformanceCounter("Memory", "Available MBytes");
 
-            // send user to the lobby
-            Lobby lobby = new Lobby();
-            lobby.ShowDialog();
-            this.Show();
+            if (ramTest.CheckRam(ramC.NextValue()) == true)
+            {
+                // hide the main menu
+                this.Hide();
+
+                // send user to the lobby
+                Lobby lobby = new Lobby();
+                lobby.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("NOT ENOUGH AVAILABLE RAM MEMORY!!!");
+            }
         }
 
         private void SinglePlayerLabel_MouseEnter(object sender, EventArgs e)

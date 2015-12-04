@@ -55,6 +55,7 @@
     <Compile Include="CardsTest.cs" />
     <Compile Include="PlayersTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestPingAndRamTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SET\SET.csproj">

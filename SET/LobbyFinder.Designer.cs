@@ -39,6 +39,12 @@
             this.joinLabel = new System.Windows.Forms.Label();
             this.createLabel = new System.Windows.Forms.Label();
             this.exitLabel = new System.Windows.Forms.Label();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.pingResult = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.ramResult = new System.Windows.Forms.ToolStripStatusLabel();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lobbyList
@@ -69,7 +75,7 @@
             "Example Lobby 15                                4/5",
             "Example Lobby 16                                1/5"});
             this.lobbyList.Location = new System.Drawing.Point(158, 100);
-            this.lobbyList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lobbyList.Margin = new System.Windows.Forms.Padding(2);
             this.lobbyList.Name = "lobbyList";
             this.lobbyList.Size = new System.Drawing.Size(346, 247);
             this.lobbyList.TabIndex = 0;
@@ -161,23 +167,69 @@
             this.exitLabel.MouseEnter += new System.EventHandler(this.ExitLabelMouseEnter);
             this.exitLabel.MouseLeave += new System.EventHandler(this.ExitLabelMouseLeave);
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1,
+            this.pingResult,
+            this.toolStripStatusLabel3,
+            this.ramResult});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 510);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.statusStrip1.Size = new System.Drawing.Size(663, 22);
+            this.statusStrip1.TabIndex = 10;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.ForeColor = System.Drawing.Color.White;
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(40, 17);
+            this.toolStripStatusLabel1.Text = " Ping: ";
+            // 
+            // pingResult
+            // 
+            this.pingResult.ForeColor = System.Drawing.Color.White;
+            this.pingResult.Name = "pingResult";
+            this.pingResult.Size = new System.Drawing.Size(29, 17);
+            this.pingResult.Text = "N/A";
+            // 
+            // toolStripStatusLabel3
+            // 
+            this.toolStripStatusLabel3.ForeColor = System.Drawing.Color.White;
+            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(86, 17);
+            this.toolStripStatusLabel3.Text = " Free Memory: ";
+            // 
+            // ramResult
+            // 
+            this.ramResult.ForeColor = System.Drawing.Color.White;
+            this.ramResult.Name = "ramResult";
+            this.ramResult.Size = new System.Drawing.Size(29, 17);
+            this.ramResult.Text = "N/A";
+            // 
             // LobbyFinder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(663, 532);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.exitLabel);
             this.Controls.Add(this.createLabel);
             this.Controls.Add(this.joinLabel);
             this.Controls.Add(this.playersInLobbyLabel);
             this.Controls.Add(this.lobbyNameLabel);
             this.Controls.Add(this.lobbyList);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(1444, 885);
             this.MinimumSize = new System.Drawing.Size(679, 373);
             this.Name = "LobbyFinder";
             this.Text = "LobbyFinder";
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -191,5 +243,10 @@
         private System.Windows.Forms.Label joinLabel;
         private System.Windows.Forms.Label createLabel;
         private System.Windows.Forms.Label exitLabel;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel pingResult;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
+        private System.Windows.Forms.ToolStripStatusLabel ramResult;
     }
 }

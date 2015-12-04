@@ -4,12 +4,14 @@
     using System.Collections.Generic;
     using System.ComponentModel;
     using System.Data;
+    using System.Diagnostics;
     using System.Drawing;
     using System.Linq;
+    using System.Net.NetworkInformation;
     using System.Text;
     using System.Threading.Tasks;
     using System.Windows.Forms;
-    
+
     /// <summary>
     /// This Form displays a list of lobbies able to be
     /// joined by the user. The User can join an existing
@@ -23,6 +25,10 @@
         public LobbyFinder()
         {
             InitializeComponent();
+            Ping p = new Ping();
+            var ramC = new PerformanceCounter("Memory", "Available MBytes");
+            pingResult.Text = p.Send("www.google.com").RoundtripTime.ToString() + " ms";
+            ramResult.Text = ramC.NextValue().ToString() + " MB";
         }
 
         /// <summary>

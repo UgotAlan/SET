@@ -57,3 +57,29 @@ C:\Users\ldsag_000\Documents\SET\SET\obj\Debug\SET.Properties.Resources.resource
 C:\Users\ldsag_000\Documents\SET\SET\obj\Debug\SET.csproj.GenerateResource.Cache
 D:\Personal\School\Second Year\CS 3450\SET\SET\obj\Debug\SET.GameBoard.resources
 D:\Personal\School\Second Year\CS 3450\SET\SET\obj\Debug\SET.GeneralOptions.resources
+C:\Users\daxola123\Google Drive\CS3450\GitHub\SET\SET\bin\Debug\SET.exe.config
+C:\Users\daxola123\Google Drive\CS3450\GitHub\SET\SET\obj\Debug\SET.exe
+C:\Users\daxola123\Google Drive\CS3450\GitHub\SET\SET\obj\Debug\SET.pdb
+C:\Users\daxola123\Google Drive\CS3450\GitHub\SET\SET\bin\Debug\SET.exe
+C:\Users\daxola123\Google Drive\CS3450\GitHub\SET\SET\bin\Debug\SET.pdb
+C:\Users\daxola123\Google Drive\CS3450\GitHub\SET\SET\obj\Debug\SET.csprojResolveAssemblyReference.cache
+C:\Users\daxola123\Google Drive\CS3450\GitHub\SET\SET\obj\Debug\SET.GameBoard.resources
+C:\Users\daxola123\Google Drive\CS3450\GitHub\SET\SET\obj\Debug\SET.GeneralOptions.resources
+C:\Users\daxola123\Google Drive\CS3450\GitHub\SET\SET\obj\Debug\SET.Lobby.resources
+C:\Users\daxola123\Google Drive\CS3450\GitHub\SET\SET\obj\Debug\SET.LobbyFinder.resources
+C:\Users\daxola123\Google Drive\CS3450\GitHub\SET\SET\obj\Debug\SET.MainMenu.resources
+C:\Users\daxola123\Google Drive\CS3450\GitHub\SET\SET\obj\Debug\SET.Properties.Resources.resources
+C:\Users\daxola123\Google Drive\CS3450\GitHub\SET\SET\obj\Debug\SET.csproj.GenerateResource.Cache
+C:\Users\daxol\Google Drive\CS3450\GitHub\SET\SET\bin\Debug\SET.exe.config
+C:\Users\daxol\Google Drive\CS3450\GitHub\SET\SET\obj\Debug\SET.exe
+C:\Users\daxol\Google Drive\CS3450\GitHub\SET\SET\obj\Debug\SET.pdb
+C:\Users\daxol\Google Drive\CS3450\GitHub\SET\SET\bin\Debug\SET.exe
+C:\Users\daxol\Google Drive\CS3450\GitHub\SET\SET\bin\Debug\SET.pdb
+C:\Users\daxol\Google Drive\CS3450\GitHub\SET\SET\obj\Debug\SET.csprojResolveAssemblyReference.cache
+C:\Users\daxol\Google Drive\CS3450\GitHub\SET\SET\obj\Debug\SET.GameBoard.resources
+C:\Users\daxol\Google Drive\CS3450\GitHub\SET\SET\obj\Debug\SET.GeneralOptions.resources
+C:\Users\daxol\Google Drive\CS3450\GitHub\SET\SET\obj\Debug\SET.Lobby.resources
+C:\Users\daxol\Google Drive\CS3450\GitHub\SET\SET\obj\Debug\SET.LobbyFinder.resources
+C:\Users\daxol\Google Drive\CS3450\GitHub\SET\SET\obj\Debug\SET.MainMenu.resources
+C:\Users\daxol\Google Drive\CS3450\GitHub\SET\SET\obj\Debug\SET.Properties.Resources.resources
+C:\Users\daxol\Google Drive\CS3450\GitHub\SET\SET\obj\Debug\SET.csproj.GenerateResource.Cache
