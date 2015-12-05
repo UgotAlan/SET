@@ -17,7 +17,7 @@
     /// </summary>
     public partial class GameBoard : Form
     {
-        private Processing game;
+        private Processing game = new Processing();
         int cardsSelected;
         private int[] options;
 
@@ -27,7 +27,7 @@
         public GameBoard(int[] options)
         {
             InitializeComponent();
-            // game.startGame(options);
+            game.startGame(options);
         }
 
         /// <summary>
@@ -40,8 +40,16 @@
             // Set Logic
             if (cardsSelected == 3)
             {
-                // take user to game.confirmSet(); and then take out this message box.
-                MessageBox.Show("You have 3 cards selected, YAY!");
+                if(game.confirmSet() == true)
+                {
+                    MessageBox.Show("You have a valid set, YAY!");
+                    // add 1 to score
+                }
+                else
+                {
+                    MessageBox.Show("Your SET is NOT valid!");
+                    // subtract 1 from score
+                }
             }
             else
             {

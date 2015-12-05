@@ -13,7 +13,7 @@
     /// </summary>
     class Processing
     {
-        private Data gameData;
+        private Data gameData = new Data();
 
         public void startGame(int[] options)
         {
@@ -60,9 +60,10 @@
         }
 
         // Unfinished
-        public void confirmSet()
+        public bool confirmSet()
         {
-
+            // true if valid set, false if invalid
+            return true;
         }
 
         // Unfinished
