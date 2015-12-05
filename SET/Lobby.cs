@@ -48,6 +48,7 @@ namespace SET
             bool result = Int32.TryParse(numberOfSetsTextBox.Text, out secondOption);
             if (!result)
             {
+                MessageBox.Show("You must specify how many SETs for the round.");
                 return;
             }
 
