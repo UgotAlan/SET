@@ -67,9 +67,9 @@
         }
 
         // Unfinished
-        private bool checkSet(Cards[] set)
+        public bool checkSet(Cards[] set)
         {
-            return false;
+            return true;
         }
 
         // Unfinished

@@ -19,7 +19,21 @@
     {
         private Processing game = new Processing();
         int cardsSelected;
-        private int[] options;
+        Cards[] currentSet;
+        // create holder for the 12 cards for the game board. These need to be set when we call for a new card to be put on the board.
+        Cards card1 = null;
+        Cards card2 = null;
+        Cards card3 = null;
+        Cards card4 = null;
+        Cards card5 = null;
+        Cards card6 = null;
+        Cards card7 = null;
+        Cards card8 = null;
+        Cards card9 = null;
+        Cards card10 = null;
+        Cards card11 = null;
+        Cards card12 = null;
+        // private int[] options; // dont think we need this since the settings are sent to game when form is created.
 
         /// <summary>
         /// Initializes a new instance of the GameBoard class.
@@ -40,7 +54,7 @@
             // Set Logic
             if (cardsSelected == 3)
             {
-                if(game.confirmSet() == true)
+                if(game.checkSet(currentSet) == true)
                 {
                     MessageBox.Show("You have a valid set, YAY!");
                     // add 1 to score
@@ -153,11 +167,13 @@
             if (pictureBox1.BackColor == Color.Gold)
             {
                 pictureBox1.BackColor = Color.FromArgb(0x575757);
+                // take card out of the set array
                 --cardsSelected;
             }
             else if (cardsSelected < 3)
             {
                 pictureBox1.BackColor = Color.Gold;
+                // add card to set array
                 ++cardsSelected;
             }
         }
