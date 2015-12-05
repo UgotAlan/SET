@@ -27,7 +27,7 @@
         public GameBoard(int[] options)
         {
             InitializeComponent();
-            game.startGame(options);
+            // game.startGame(options);
         }
 
         /// <summary>
@@ -38,6 +38,15 @@
         private void SetButtonClick(object sender, EventArgs e)
         {
             // Set Logic
+            if (cardsSelected == 3)
+            {
+                // take user to game.confirmSet(); and then take out this message box.
+                MessageBox.Show("You have 3 cards selected, YAY!");
+            }
+            else
+            {
+                MessageBox.Show("You need to have 3 cards selected to declare a SET");
+            }
         }
 
         /// <summary>
