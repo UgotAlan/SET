@@ -36,8 +36,24 @@ namespace SET
         private void StartLabelClick(object sender, EventArgs e)
         {
             // Logic for starting game.
+            int firstOption = -1;
+            if (singleColorModeRadioButton.Checked)
+                firstOption = 0;
+            if (beginnerModeRadioButton.Checked)
+                firstOption = 1;
+            if (tutorialModeRadioButton.Checked)
+                firstOption = 2;
+
+            int secondOption;
+            bool result = Int32.TryParse(numberOfSetsTextBox.Text, out secondOption);
+            if (!result)
+            {
+                return;
+            }
+
+            int[] options = { firstOption, secondOption};
             this.Hide();
-            GameBoard gameBoard = new GameBoard();
+            GameBoard gameBoard = new GameBoard(options);
             gameBoard.ShowDialog();
         }
 
