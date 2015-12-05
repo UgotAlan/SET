@@ -17,14 +17,17 @@
     /// </summary>
     public partial class GameBoard : Form
     {
+        private Processing game;
         int cardsSelected;
+        private int[] options;
 
         /// <summary>
         /// Initializes a new instance of the GameBoard class.
         /// </summary>
-        public GameBoard()
+        public GameBoard(int[] options)
         {
             InitializeComponent();
+            game.startGame(options);
         }
 
         /// <summary>

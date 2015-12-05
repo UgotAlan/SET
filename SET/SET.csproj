@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cards.cs" />
+    <Compile Include="Data.cs" />
     <Compile Include="GameBoard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +81,7 @@
     </Compile>
     <Compile Include="MainProgram.cs" />
     <Compile Include="Players.cs" />
+    <Compile Include="Processing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestPingAndRam.cs" />
     <EmbeddedResource Include="GameBoard.resx">
