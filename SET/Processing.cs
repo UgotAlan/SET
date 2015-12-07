@@ -11,7 +11,7 @@
     /// and method relating to processing instructions from the
     /// GameBoard.cs class and Data.cs class.
     /// </summary>
-    class Processing
+    public class Processing
     {
         private Data gameData = new Data();
 
@@ -59,11 +59,63 @@
             return gameData.getCardsOnBoard();
         }
 
-        // Unfinished
-        public bool confirmSet()
+        /// <summary>
+        /// method confirms whether three chosen cards are an actual set
+        /// after selecting 3 cards and pressing the set button.
+        /// </summary>
+        /// <param name="cardList"></param>
+        /// <returns>boolean true/false</returns>
+        public bool ConfirmSet(List<Cards> cardList)
         {
             // true if valid set, false if invalid
-            return true;
+            int counter = 0;
+
+            // check if color, number, shade, and shape between all 3 cards are the same or all different
+            if (cardList.ElementAt(0).Color == cardList.ElementAt(1).Color && cardList.ElementAt(1).Color == cardList.ElementAt(2).Color)
+            {
+                counter++;
+            }
+            else if (cardList.ElementAt(0).Color != cardList.ElementAt(1).Color && cardList.ElementAt(1).Color != cardList.ElementAt(2).Color)
+            {
+                counter++;
+            }
+
+            if (cardList.ElementAt(0).Number == cardList.ElementAt(1).Number && cardList.ElementAt(1).Number == cardList.ElementAt(2).Number)
+            {
+                counter++;
+            }
+            else if (cardList.ElementAt(0).Number != cardList.ElementAt(1).Number && cardList.ElementAt(1).Number != cardList.ElementAt(2).Number)
+            {
+                counter++;
+            }
+
+            if (cardList.ElementAt(0).Shade == cardList.ElementAt(1).Shade && cardList.ElementAt(1).Shade == cardList.ElementAt(2).Shade)
+            {
+                counter++;
+            }
+            else if (cardList.ElementAt(0).Shade != cardList.ElementAt(1).Shade && cardList.ElementAt(1).Shade != cardList.ElementAt(2).Shade)
+            {
+                counter++;
+            }
+
+            if (cardList.ElementAt(0).Shape == cardList.ElementAt(1).Shape && cardList.ElementAt(1).Shape == cardList.ElementAt(2).Shape)
+            {
+                counter++;
+            }
+            else if (cardList.ElementAt(0).Shape != cardList.ElementAt(1).Shape && cardList.ElementAt(1).Shape != cardList.ElementAt(2).Shape)
+            {
+                counter++;
+            }
+
+            // check to see if all 4 stipulations to make a set have been satisfied
+            if (counter == 4)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         // Unfinished
