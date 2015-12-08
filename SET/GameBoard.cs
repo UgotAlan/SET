@@ -19,7 +19,7 @@
     {
         private Processing game = new Processing();
         int cardsSelected;
-        Cards[] currentSet;
+        List<Cards> currentSet = new List<Cards>();
         // create holder for the 12 cards for the game board. These need to be set when we call for a new card to be put on the board.
         Cards card1 = null;
         Cards card2 = null;
@@ -54,7 +54,7 @@
             // Set Logic
             if (cardsSelected == 3)
             {
-                if(game.checkSet(currentSet) == true)
+                if(currentSet.Count() == 3 && game.ConfirmSet(currentSet) == true)
                 {
                     MessageBox.Show("You have a valid set, YAY!");
                     // add 1 to score
