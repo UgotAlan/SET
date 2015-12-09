@@ -21,6 +21,7 @@
         private bool colorMode;
         private bool beginnerMode;
         private bool tutorialMode;
+        private bool normalMode;
         private int numberOfSets;
 
         public Data()
@@ -32,6 +33,7 @@
             colorMode = false;
             beginnerMode = false;
             tutorialMode = false;
+            normalMode = true;
             numberOfSets = 10;
         }
 
@@ -54,7 +56,17 @@
         {
             numberOfSets = sets;
         }
-        
+
+        public void setUsers(int v)
+        {
+            // right now just set users to 1
+            for (int i = players.Count; i < v; i++)
+            {
+                players.Add(new Players());
+            }
+            
+        }
+
         public void buildDeck()
         {
             string shape = "temp";
@@ -115,11 +127,22 @@
 
             shuffleDeck();
             for (int i = 0; i < 12; ++i)
+            {
                 getNewCard();
+            }
         }
-        
+
+        internal void setUserSets(List<Cards> set)
+        {
+            players[0].SetsMade.Add(set);
+        }
+
         public List<Cards> getCardsOnBoard()
         {
+            while (cardsOnBoard.Count < 12)
+            {
+                getNewCard();
+            }
             return cardsOnBoard;
         }
         
@@ -135,33 +158,39 @@
         
         public void setUserScore(int score)
         {
-            players[0].Score = score;
+            players[0].Score += score;
         }
 
         public bool checkFinish()
         {
             if (getUserScore() == numberOfSets)
+            {
                 return true;
-            return false;
+            }
+            else
+            {
+                return false;
+            }
         }
         
         public List<List<Cards>> getUserSets()
         {
             return players[0].SetsMade;
         }
-        
-        public Cards getNewCard()
+
+        public bool getNewCard()
         {
             foreach (Cards card in deck)
             {
-                if (!card.BeenPlayed && !card.Inplay)
+                if (!card.BeenPlayed)
                 {
                     card.Inplay = true;
+                    card.BeenPlayed = true;
                     cardsOnBoard.Add(card);
-                    return card;
+                    return true;
                 }
             }
-            return new Cards();
+            return false;
         }
 
         public void removeCardsFromPlay(List<Cards> cardList)
@@ -171,12 +200,15 @@
                 card.Inplay = false;
                 cardsOnBoard.Remove(card);
             }
+            getCardsOnBoard();
         }
         
         public void removePlayedFlags()
         {
             foreach (Cards card in deck)
+            {
                 card.BeenPlayed = false;
+            }
         }
 
         public void shuffleDeck()

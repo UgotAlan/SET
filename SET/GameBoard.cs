@@ -48,6 +48,13 @@
                 if(currentSet.Count() == 3 && game.ConfirmSet(currentSet) == true)
                 {
                     updateScoreBoard();
+                    if (game.CheckFinish())
+                    {
+                        MessageBox.Show("YOU WON!");
+                        this.Close();
+                        return;
+                    }
+                        
                     MessageBox.Show("You have a valid set, YAY!");
                     updateCardsOnBoard();
                     clearSelected();
