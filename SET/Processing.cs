@@ -24,22 +24,13 @@
         private void setOptions(int[] options)
         {
             if (options[0] == 0)
-            {
                 gameData.changeColorMode();
-            }
             else if (options[0] == 1)
-            {
                 gameData.changeBeginnerMode();
-            }
             else if (options[0] == 2)
-            {
                 gameData.changeTutorialMode();
-            }
-            else // this will defualt to normal mode
-            {
-                gameData.changeNormalMode();
-            }
-
+            else if (options[0] == 3)
+                gameData.changeTutorialMode();
             gameData.changeNumberOfSets(options[1]);
         }
 
@@ -63,7 +54,7 @@
             return gameData.getUserSets();
         }
 
-        public Cards[] getCardsOnBoard()
+        public List<Cards> getCardsOnBoard()
         {
             return gameData.getCardsOnBoard();
         }
@@ -75,6 +66,38 @@
         /// <param name="cardList">Argument takes List type</param>
         /// <returns>boolean true/false</returns>
         public bool ConfirmSet(List<Cards> cardList)
+        {
+            if (CheckSet(cardList))
+            {
+                gameData.setUserScore(getUserScore() + 1);
+                if (CheckFinish())
+                    // Game finish screen
+                    return false;
+                else
+                {
+                    gameData.removeCardsFromPlay(cardList);
+                    for (var i = 0; i < 3; ++i)
+                    {
+                        if (gameData.getNewCard() == new Cards())
+                            gameData.shuffleDeck();
+                    }
+                    return true;
+                }
+            }
+            else
+            {
+                gameData.setUserScore(getUserScore() - 1);
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Loops through all possible combinations of 3 cards form the game board to find if
+        /// there is at least one possible set by using method confirmSet.
+        /// </summary>
+        /// <param name="listTwelve">Argument takes List type</param>
+        /// <returns>boolean true/false</returns>
+        public bool CheckSet(List<Cards> cardList)
         {
             // true if valid set, false if invalid
             int counter = 0;
@@ -135,77 +158,17 @@
                 return false;
             }
         }
-
-        /// <summary>
-        /// Loops through all possible combinations of 3 cards form the game board to find if
-        /// there is at least one possible set by using method confirmSet.
-        /// </summary>
-        /// <param name="listTwelve">Argument takes List type</param>
-        /// <returns>boolean true/false</returns>
-        public bool CheckSet(List<Cards> listTwelve)
+        
+        private bool CheckFinish()
         {
-            List<Cards> listThree = new List<Cards>();
-
-            Cards card1 = new Cards();
-            Cards card2 = new Cards();
-            Cards card3 = new Cards();
-
-            for (int i = 0; i < 12; i++)
-            {
-                for (int j = 0; j < 12; j++)
-                {
-                    if (j != i)
-                    {
-                        for (int k = 0; k < 12; k++)
-                        {
-                            if (k != i && k != j)
-                            {
-                                listThree.Clear();
-
-                                card1.Color = listTwelve.ElementAt(i).Color;
-                                card1.Number = listTwelve.ElementAt(i).Number;
-                                card1.Shade = listTwelve.ElementAt(i).Shade;
-                                card1.Shape = listTwelve.ElementAt(i).Shape;
-
-                                card2.Color = listTwelve.ElementAt(j).Color;
-                                card2.Number = listTwelve.ElementAt(j).Number;
-                                card2.Shade = listTwelve.ElementAt(j).Shade;
-                                card2.Shape = listTwelve.ElementAt(j).Shape;
-
-                                card3.Color = listTwelve.ElementAt(k).Color;
-                                card3.Number = listTwelve.ElementAt(k).Number;
-                                card3.Shade = listTwelve.ElementAt(k).Shade;
-                                card3.Shape = listTwelve.ElementAt(k).Shape;
-
-                                listThree.Insert(0, card1);
-                                listThree.Insert(1, card2);
-                                listThree.Insert(2, card3);
-
-                                // If the current combination is a set, return true and exit the method.
-                                if (ConfirmSet(listThree) == true)
-                                {
-                                    return true;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            // Return false if there are no possible SET combinations on the gameboard.
+            if (gameData.checkFinish())
+                return true;
             return false;
         }
-
-        // Unfinished
-        private bool checkFinish()
+        
+        private void ShuffleDeck()
         {
-            return false;
-        }
-
-        // Unfinished
-        private void shuffleDeck()
-        {
-
+            gameData.shuffleDeck();
         }
     }
 }

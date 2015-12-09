@@ -29,13 +29,15 @@
             BeenPlayed = false;
         }
 
-        public Cards(int number, string color, string shade, string shape)
+        public Cards(string Image, string Color, string Shade, string Shape, int Number)
         {
-            this.Number = number;
-            this.Color = color;
-            this.Shade = shade;
-            this.Shape = shape;
-            this.Image = "../../../set_cards/" + this.Number.ToString() + "_" + this.Shape + "_" + this.Color + "_" + this.Shade + ".gif";
+            this.Image = Image;
+            this.Color = Color;
+            this.Shade = Shade;
+            this.Shape = Shape;
+            this.Number = Number;
+            this.Inplay = false;
+            this.BeenPlayed = false;
         }
 
         /// <summary>

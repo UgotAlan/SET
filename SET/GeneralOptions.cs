@@ -17,22 +17,11 @@
     /// </summary>
     public partial class GeneralOptions : Form
     {
-        
-        public GeneralOptions(Players player1)
+        public GeneralOptions()
         {
-
             InitializeComponent();
-            if(player1.Mute == true)
-            {
-                muteCheckBox.Checked = true;
-            }
-            else
-            {
-                muteCheckBox.Checked = false;
-            }
-            keyBindingLable.Text = player1.Keybinds["key"];
         }
-        
+
         /// <summary>
         /// Close the option form without saving
         /// </summary>
@@ -51,10 +40,8 @@
         /// <param name="e">The parameter is not used.</param>
         private void SaveOptionsLabel_Click(object sender, EventArgs e)
         {
-            // want to do logic to update the settings but don't know how to access
-            // the player1 object that we passed into this form.
             // save settings
-            MessageBox.Show("Sorry, but we were unable to save your optoins at this time.");
+            MessageBox.Show("Your settings were saved!");
             
             // close otions form
             this.Close();
@@ -68,7 +55,7 @@
         private void KeyBindingLable_Click(object sender, EventArgs e)
         {
             // allow user to switch key bind to whatever key they press
-            MessageBox.Show("This feature is not working at this time.");
+            MessageBox.Show("Allow user to switch keybinds!");
         }
 
         /// <summary>
@@ -150,6 +137,5 @@
         {
             keyBindingLable.ForeColor = Color.White;
         }
-
     }
 }

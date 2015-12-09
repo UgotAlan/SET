@@ -65,7 +65,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1_dia_blu_emp {
             get {
-                object obj = ResourceManager.GetObject("1_dia_blu_emp", resourceCulture);
+                object obj = ResourceManager.GetObject("_1_dia_blu_emp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -75,7 +75,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1_dia_blu_hat {
             get {
-                object obj = ResourceManager.GetObject("1_dia_blu_hat", resourceCulture);
+                object obj = ResourceManager.GetObject("_1_dia_blu_hat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -85,7 +85,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1_dia_blu_sol {
             get {
-                object obj = ResourceManager.GetObject("1_dia_blu_sol", resourceCulture);
+                object obj = ResourceManager.GetObject("_1_dia_blu_sol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -95,7 +95,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1_dia_gre_emp {
             get {
-                object obj = ResourceManager.GetObject("1_dia_gre_emp", resourceCulture);
+                object obj = ResourceManager.GetObject("_1_dia_gre_emp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -105,7 +105,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1_dia_gre_hat {
             get {
-                object obj = ResourceManager.GetObject("1_dia_gre_hat", resourceCulture);
+                object obj = ResourceManager.GetObject("_1_dia_gre_hat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -115,7 +115,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1_dia_gre_sol {
             get {
-                object obj = ResourceManager.GetObject("1_dia_gre_sol", resourceCulture);
+                object obj = ResourceManager.GetObject("_1_dia_gre_sol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -125,7 +125,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1_dia_red_emp {
             get {
-                object obj = ResourceManager.GetObject("1_dia_red_emp", resourceCulture);
+                object obj = ResourceManager.GetObject("_1_dia_red_emp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -135,7 +135,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1_dia_red_hat {
             get {
-                object obj = ResourceManager.GetObject("1_dia_red_hat", resourceCulture);
+                object obj = ResourceManager.GetObject("_1_dia_red_hat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -145,7 +145,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1_dia_red_sol {
             get {
-                object obj = ResourceManager.GetObject("1_dia_red_sol", resourceCulture);
+                object obj = ResourceManager.GetObject("_1_dia_red_sol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -155,7 +155,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1_ova_blu_emp {
             get {
-                object obj = ResourceManager.GetObject("1_ova_blu_emp", resourceCulture);
+                object obj = ResourceManager.GetObject("_1_ova_blu_emp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -165,7 +165,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1_ova_blu_hat {
             get {
-                object obj = ResourceManager.GetObject("1_ova_blu_hat", resourceCulture);
+                object obj = ResourceManager.GetObject("_1_ova_blu_hat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -175,7 +175,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1_ova_blu_sol {
             get {
-                object obj = ResourceManager.GetObject("1_ova_blu_sol", resourceCulture);
+                object obj = ResourceManager.GetObject("_1_ova_blu_sol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -185,7 +185,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1_ova_gre_emp {
             get {
-                object obj = ResourceManager.GetObject("1_ova_gre_emp", resourceCulture);
+                object obj = ResourceManager.GetObject("_1_ova_gre_emp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -195,7 +195,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1_ova_gre_hat {
             get {
-                object obj = ResourceManager.GetObject("1_ova_gre_hat", resourceCulture);
+                object obj = ResourceManager.GetObject("_1_ova_gre_hat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -205,7 +205,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1_ova_gre_sol {
             get {
-                object obj = ResourceManager.GetObject("1_ova_gre_sol", resourceCulture);
+                object obj = ResourceManager.GetObject("_1_ova_gre_sol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -215,7 +215,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1_ova_red_emp {
             get {
-                object obj = ResourceManager.GetObject("1_ova_red_emp", resourceCulture);
+                object obj = ResourceManager.GetObject("_1_ova_red_emp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -225,7 +225,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1_ova_red_hat {
             get {
-                object obj = ResourceManager.GetObject("1_ova_red_hat", resourceCulture);
+                object obj = ResourceManager.GetObject("_1_ova_red_hat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -235,7 +235,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1_ova_red_sol {
             get {
-                object obj = ResourceManager.GetObject("1_ova_red_sol", resourceCulture);
+                object obj = ResourceManager.GetObject("_1_ova_red_sol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -245,7 +245,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1_squ_blu_emp {
             get {
-                object obj = ResourceManager.GetObject("1_squ_blu_emp", resourceCulture);
+                object obj = ResourceManager.GetObject("_1_squ_blu_emp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -255,7 +255,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1_squ_blu_hat {
             get {
-                object obj = ResourceManager.GetObject("1_squ_blu_hat", resourceCulture);
+                object obj = ResourceManager.GetObject("_1_squ_blu_hat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -265,7 +265,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1_squ_blu_sol {
             get {
-                object obj = ResourceManager.GetObject("1_squ_blu_sol", resourceCulture);
+                object obj = ResourceManager.GetObject("_1_squ_blu_sol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -275,7 +275,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1_squ_gre_emp {
             get {
-                object obj = ResourceManager.GetObject("1_squ_gre_emp", resourceCulture);
+                object obj = ResourceManager.GetObject("_1_squ_gre_emp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -285,7 +285,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1_squ_gre_hat {
             get {
-                object obj = ResourceManager.GetObject("1_squ_gre_hat", resourceCulture);
+                object obj = ResourceManager.GetObject("_1_squ_gre_hat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -295,7 +295,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1_squ_gre_sol {
             get {
-                object obj = ResourceManager.GetObject("1_squ_gre_sol", resourceCulture);
+                object obj = ResourceManager.GetObject("_1_squ_gre_sol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -305,7 +305,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1_squ_red_emp {
             get {
-                object obj = ResourceManager.GetObject("1_squ_red_emp", resourceCulture);
+                object obj = ResourceManager.GetObject("_1_squ_red_emp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -315,7 +315,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1_squ_red_hat {
             get {
-                object obj = ResourceManager.GetObject("1_squ_red_hat", resourceCulture);
+                object obj = ResourceManager.GetObject("_1_squ_red_hat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -325,7 +325,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _1_squ_red_sol {
             get {
-                object obj = ResourceManager.GetObject("1_squ_red_sol", resourceCulture);
+                object obj = ResourceManager.GetObject("_1_squ_red_sol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -335,7 +335,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _2_dia_blu_emp {
             get {
-                object obj = ResourceManager.GetObject("2_dia_blu_emp", resourceCulture);
+                object obj = ResourceManager.GetObject("_2_dia_blu_emp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -345,7 +345,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _2_dia_blu_hat {
             get {
-                object obj = ResourceManager.GetObject("2_dia_blu_hat", resourceCulture);
+                object obj = ResourceManager.GetObject("_2_dia_blu_hat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -355,7 +355,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _2_dia_blu_sol {
             get {
-                object obj = ResourceManager.GetObject("2_dia_blu_sol", resourceCulture);
+                object obj = ResourceManager.GetObject("_2_dia_blu_sol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -365,7 +365,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _2_dia_gre_emp {
             get {
-                object obj = ResourceManager.GetObject("2_dia_gre_emp", resourceCulture);
+                object obj = ResourceManager.GetObject("_2_dia_gre_emp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -375,7 +375,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _2_dia_gre_hat {
             get {
-                object obj = ResourceManager.GetObject("2_dia_gre_hat", resourceCulture);
+                object obj = ResourceManager.GetObject("_2_dia_gre_hat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -385,7 +385,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _2_dia_gre_sol {
             get {
-                object obj = ResourceManager.GetObject("2_dia_gre_sol", resourceCulture);
+                object obj = ResourceManager.GetObject("_2_dia_gre_sol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -395,7 +395,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _2_dia_red_emp {
             get {
-                object obj = ResourceManager.GetObject("2_dia_red_emp", resourceCulture);
+                object obj = ResourceManager.GetObject("_2_dia_red_emp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -405,7 +405,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _2_dia_red_hat {
             get {
-                object obj = ResourceManager.GetObject("2_dia_red_hat", resourceCulture);
+                object obj = ResourceManager.GetObject("_2_dia_red_hat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -415,7 +415,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _2_dia_red_sol {
             get {
-                object obj = ResourceManager.GetObject("2_dia_red_sol", resourceCulture);
+                object obj = ResourceManager.GetObject("_2_dia_red_sol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -425,7 +425,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _2_ova_blu_emp {
             get {
-                object obj = ResourceManager.GetObject("2_ova_blu_emp", resourceCulture);
+                object obj = ResourceManager.GetObject("_2_ova_blu_emp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -435,7 +435,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _2_ova_blu_hat {
             get {
-                object obj = ResourceManager.GetObject("2_ova_blu_hat", resourceCulture);
+                object obj = ResourceManager.GetObject("_2_ova_blu_hat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -445,7 +445,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _2_ova_blu_sol {
             get {
-                object obj = ResourceManager.GetObject("2_ova_blu_sol", resourceCulture);
+                object obj = ResourceManager.GetObject("_2_ova_blu_sol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -455,7 +455,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _2_ova_gre_emp {
             get {
-                object obj = ResourceManager.GetObject("2_ova_gre_emp", resourceCulture);
+                object obj = ResourceManager.GetObject("_2_ova_gre_emp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -465,7 +465,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _2_ova_gre_hat {
             get {
-                object obj = ResourceManager.GetObject("2_ova_gre_hat", resourceCulture);
+                object obj = ResourceManager.GetObject("_2_ova_gre_hat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -475,7 +475,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _2_ova_gre_sol {
             get {
-                object obj = ResourceManager.GetObject("2_ova_gre_sol", resourceCulture);
+                object obj = ResourceManager.GetObject("_2_ova_gre_sol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -485,7 +485,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _2_ova_red_emp {
             get {
-                object obj = ResourceManager.GetObject("2_ova_red_emp", resourceCulture);
+                object obj = ResourceManager.GetObject("_2_ova_red_emp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -495,7 +495,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _2_ova_red_hat {
             get {
-                object obj = ResourceManager.GetObject("2_ova_red_hat", resourceCulture);
+                object obj = ResourceManager.GetObject("_2_ova_red_hat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -505,7 +505,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _2_ova_red_sol {
             get {
-                object obj = ResourceManager.GetObject("2_ova_red_sol", resourceCulture);
+                object obj = ResourceManager.GetObject("_2_ova_red_sol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -515,7 +515,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _2_squ_blu_emp {
             get {
-                object obj = ResourceManager.GetObject("2_squ_blu_emp", resourceCulture);
+                object obj = ResourceManager.GetObject("_2_squ_blu_emp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -525,7 +525,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _2_squ_blu_hat {
             get {
-                object obj = ResourceManager.GetObject("2_squ_blu_hat", resourceCulture);
+                object obj = ResourceManager.GetObject("_2_squ_blu_hat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -535,7 +535,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _2_squ_blu_sol {
             get {
-                object obj = ResourceManager.GetObject("2_squ_blu_sol", resourceCulture);
+                object obj = ResourceManager.GetObject("_2_squ_blu_sol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -545,7 +545,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _2_squ_gre_emp {
             get {
-                object obj = ResourceManager.GetObject("2_squ_gre_emp", resourceCulture);
+                object obj = ResourceManager.GetObject("_2_squ_gre_emp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -555,7 +555,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _2_squ_gre_hat {
             get {
-                object obj = ResourceManager.GetObject("2_squ_gre_hat", resourceCulture);
+                object obj = ResourceManager.GetObject("_2_squ_gre_hat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -565,7 +565,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _2_squ_gre_sol {
             get {
-                object obj = ResourceManager.GetObject("2_squ_gre_sol", resourceCulture);
+                object obj = ResourceManager.GetObject("_2_squ_gre_sol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -575,7 +575,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _2_squ_red_emp {
             get {
-                object obj = ResourceManager.GetObject("2_squ_red_emp", resourceCulture);
+                object obj = ResourceManager.GetObject("_2_squ_red_emp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -585,7 +585,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _2_squ_red_hat {
             get {
-                object obj = ResourceManager.GetObject("2_squ_red_hat", resourceCulture);
+                object obj = ResourceManager.GetObject("_2_squ_red_hat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -595,7 +595,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _2_squ_red_sol {
             get {
-                object obj = ResourceManager.GetObject("2_squ_red_sol", resourceCulture);
+                object obj = ResourceManager.GetObject("_2_squ_red_sol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -605,7 +605,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3_dia_blu_emp {
             get {
-                object obj = ResourceManager.GetObject("3_dia_blu_emp", resourceCulture);
+                object obj = ResourceManager.GetObject("_3_dia_blu_emp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -615,7 +615,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3_dia_blu_hat {
             get {
-                object obj = ResourceManager.GetObject("3_dia_blu_hat", resourceCulture);
+                object obj = ResourceManager.GetObject("_3_dia_blu_hat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -625,7 +625,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3_dia_blu_sol {
             get {
-                object obj = ResourceManager.GetObject("3_dia_blu_sol", resourceCulture);
+                object obj = ResourceManager.GetObject("_3_dia_blu_sol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -635,7 +635,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3_dia_gre_emp {
             get {
-                object obj = ResourceManager.GetObject("3_dia_gre_emp", resourceCulture);
+                object obj = ResourceManager.GetObject("_3_dia_gre_emp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -645,7 +645,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3_dia_gre_hat {
             get {
-                object obj = ResourceManager.GetObject("3_dia_gre_hat", resourceCulture);
+                object obj = ResourceManager.GetObject("_3_dia_gre_hat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -655,7 +655,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3_dia_gre_sol {
             get {
-                object obj = ResourceManager.GetObject("3_dia_gre_sol", resourceCulture);
+                object obj = ResourceManager.GetObject("_3_dia_gre_sol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -665,7 +665,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3_dia_red_emp {
             get {
-                object obj = ResourceManager.GetObject("3_dia_red_emp", resourceCulture);
+                object obj = ResourceManager.GetObject("_3_dia_red_emp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -675,7 +675,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3_dia_red_hat {
             get {
-                object obj = ResourceManager.GetObject("3_dia_red_hat", resourceCulture);
+                object obj = ResourceManager.GetObject("_3_dia_red_hat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -685,7 +685,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3_dia_red_sol {
             get {
-                object obj = ResourceManager.GetObject("3_dia_red_sol", resourceCulture);
+                object obj = ResourceManager.GetObject("_3_dia_red_sol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -695,7 +695,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3_ova_blu_emp {
             get {
-                object obj = ResourceManager.GetObject("3_ova_blu_emp", resourceCulture);
+                object obj = ResourceManager.GetObject("_3_ova_blu_emp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -705,7 +705,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3_ova_blu_hat {
             get {
-                object obj = ResourceManager.GetObject("3_ova_blu_hat", resourceCulture);
+                object obj = ResourceManager.GetObject("_3_ova_blu_hat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -715,7 +715,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3_ova_blu_sol {
             get {
-                object obj = ResourceManager.GetObject("3_ova_blu_sol", resourceCulture);
+                object obj = ResourceManager.GetObject("_3_ova_blu_sol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -725,7 +725,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3_ova_gre_emp {
             get {
-                object obj = ResourceManager.GetObject("3_ova_gre_emp", resourceCulture);
+                object obj = ResourceManager.GetObject("_3_ova_gre_emp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -735,7 +735,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3_ova_gre_hat {
             get {
-                object obj = ResourceManager.GetObject("3_ova_gre_hat", resourceCulture);
+                object obj = ResourceManager.GetObject("_3_ova_gre_hat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -745,7 +745,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3_ova_gre_sol {
             get {
-                object obj = ResourceManager.GetObject("3_ova_gre_sol", resourceCulture);
+                object obj = ResourceManager.GetObject("_3_ova_gre_sol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -755,7 +755,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3_ova_red_emp {
             get {
-                object obj = ResourceManager.GetObject("3_ova_red_emp", resourceCulture);
+                object obj = ResourceManager.GetObject("_3_ova_red_emp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -765,7 +765,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3_ova_red_hat {
             get {
-                object obj = ResourceManager.GetObject("3_ova_red_hat", resourceCulture);
+                object obj = ResourceManager.GetObject("_3_ova_red_hat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -775,7 +775,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3_ova_red_sol {
             get {
-                object obj = ResourceManager.GetObject("3_ova_red_sol", resourceCulture);
+                object obj = ResourceManager.GetObject("_3_ova_red_sol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -785,7 +785,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3_squ_blu_emp {
             get {
-                object obj = ResourceManager.GetObject("3_squ_blu_emp", resourceCulture);
+                object obj = ResourceManager.GetObject("_3_squ_blu_emp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -795,7 +795,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3_squ_blu_hat {
             get {
-                object obj = ResourceManager.GetObject("3_squ_blu_hat", resourceCulture);
+                object obj = ResourceManager.GetObject("_3_squ_blu_hat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -805,7 +805,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3_squ_blu_sol {
             get {
-                object obj = ResourceManager.GetObject("3_squ_blu_sol", resourceCulture);
+                object obj = ResourceManager.GetObject("_3_squ_blu_sol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -815,7 +815,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3_squ_gre_emp {
             get {
-                object obj = ResourceManager.GetObject("3_squ_gre_emp", resourceCulture);
+                object obj = ResourceManager.GetObject("_3_squ_gre_emp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -825,7 +825,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3_squ_gre_hat {
             get {
-                object obj = ResourceManager.GetObject("3_squ_gre_hat", resourceCulture);
+                object obj = ResourceManager.GetObject("_3_squ_gre_hat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -835,7 +835,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3_squ_gre_sol {
             get {
-                object obj = ResourceManager.GetObject("3_squ_gre_sol", resourceCulture);
+                object obj = ResourceManager.GetObject("_3_squ_gre_sol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -845,7 +845,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3_squ_red_emp {
             get {
-                object obj = ResourceManager.GetObject("3_squ_red_emp", resourceCulture);
+                object obj = ResourceManager.GetObject("_3_squ_red_emp", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -855,7 +855,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3_squ_red_hat {
             get {
-                object obj = ResourceManager.GetObject("3_squ_red_hat", resourceCulture);
+                object obj = ResourceManager.GetObject("_3_squ_red_hat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -865,7 +865,7 @@ namespace SET.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap _3_squ_red_sol {
             get {
-                object obj = ResourceManager.GetObject("3_squ_red_sol", resourceCulture);
+                object obj = ResourceManager.GetObject("_3_squ_red_sol", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
