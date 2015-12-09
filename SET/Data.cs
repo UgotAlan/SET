@@ -159,7 +159,7 @@
                 {
                     card.Inplay = true;
                     cardsOnBoard.Add(card);
-                    if (cardsOnBoard.Count != 12 || CheckSet(cardsOnBoard))
+                    if (cardsOnBoard.Count != 12 || CheckSetOnBoard(cardsOnBoard))
                     {
                         foreach (Cards temp in templist)
                             temp.Inplay = false;
@@ -173,6 +173,60 @@
                 }
             }
             return new Cards();
+        }
+
+        private bool CheckSetOnBoard(List<Cards> listTwelve)
+        {
+            List<Cards> listThree = new List<Cards>();
+
+            Cards card1 = new Cards();
+            Cards card2 = new Cards();
+            Cards card3 = new Cards();
+
+            for (int i = 0; i < 12; ++i)
+            {
+                for (int j = 0; j < 12; ++j)
+                {
+                    if (j != i)
+                    {
+                        for (int k = 0; k < 12; ++k)
+                        {
+                            if (k != i && k != j)
+                            {
+                                listThree.Clear();
+
+                                card1.Color = listTwelve.ElementAt(i).Color;
+                                card1.Number = listTwelve.ElementAt(i).Number;
+                                card1.Shade = listTwelve.ElementAt(i).Shade;
+                                card1.Shape = listTwelve.ElementAt(i).Shape;
+
+                                card2.Color = listTwelve.ElementAt(j).Color;
+                                card2.Number = listTwelve.ElementAt(j).Number;
+                                card2.Shade = listTwelve.ElementAt(j).Shade;
+                                card2.Shape = listTwelve.ElementAt(j).Shape;
+
+                                card3.Color = listTwelve.ElementAt(k).Color;
+                                card3.Number = listTwelve.ElementAt(k).Number;
+                                card3.Shade = listTwelve.ElementAt(k).Shade;
+                                card3.Shape = listTwelve.ElementAt(k).Shape;
+
+                                listThree.Insert(0, card1);
+                                listThree.Insert(1, card2);
+                                listThree.Insert(2, card3);
+
+                                // If the current combination is a set, return true and exit the method.
+                                if (CheckSet(listThree) == true)
+                                {
+                                    return true;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // Return false if there are no possible SET combinations on the gameboard.
+            return false;
         }
 
         public void removeCardsFromPlay(List<Cards> cardList)
