@@ -18,6 +18,7 @@
         public void startGame(int[] options)
         {
             setOptions(options);
+            gameData.setUsers(1);
             createDeck();
         }
 
@@ -53,9 +54,14 @@
             return gameData.getUsers();
         }
 
-        public int getUserScore()
+        public int getUserScore(int v)
         {
-            return gameData.getUserScore();
+            return gameData.getUserScore(v);
+        }
+
+        public void setUserScore(int player, int score)
+        {
+            gameData.setUserScore(player, score);
         }
 
         public List<List<Cards>> getUserSets()

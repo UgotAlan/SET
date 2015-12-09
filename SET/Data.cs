@@ -48,6 +48,13 @@
             numberOfSets = sets;
         }
 
+        public void setUsers(int v)
+        {
+            // right now just set users to 1
+            Players player1 = new Players();
+            players.Add(player1);
+        }
+
         // Unfinished
         public void buildDeck()
         {
@@ -235,15 +242,22 @@
         }
 
         // Unfinished
-        public int getUserScore()
+        public int getUserScore(int v)
         {
-            return 0;
+            return players[v - 1].Score;
         }
 
         // Unfinished
-        public void setUserScore(int score)
+        public void setUserScore(int player, int score)
         {
-
+            if (score > 0)
+            {
+                players[player - 1].Score++;
+            }
+            else
+            {
+                players[player - 1].Score--;
+            }
         }
 
         // Unfinished

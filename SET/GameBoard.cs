@@ -18,10 +18,11 @@
     public partial class GameBoard : Form
     {
         private Processing game = new Processing();
-        int cardsSelected;
+        int numCardsSelected;
         List<Cards> currentSet = new List<Cards>();
         // create holder for the 12 cards for the game board. These need to be set when we call for a new card to be put on the board.
         private Cards[] cardsOnBoard;
+        int[] cardsSelected = { 0, 0, 0 } ;
 
         // private int[] options; // dont think we need this since the settings are sent to game when form is created.
 
@@ -47,6 +48,8 @@
             pictureBox11.BackgroundImage = Image.FromFile(cardsOnBoard[10].Image);
             pictureBox12.BackgroundImage = Image.FromFile(cardsOnBoard[11].Image);
 
+            // set score
+            updateScoreBoard();
         }
 
         /// <summary>
@@ -57,23 +60,36 @@
         private void SetButtonClick(object sender, EventArgs e)
         {
             // Set Logic
-            if (cardsSelected == 3)
+            if (numCardsSelected == 3)
             {
                 if(currentSet.Count() == 3 && game.ConfirmSet(currentSet) == true)
                 {
+                    game.setUserScore(1, 1);
+                    // update scoreboard
+                    updateScoreBoard();
+                    // get rid of selected cards from board and get new cards
                     MessageBox.Show("You have a valid set, YAY!");
-                    // add 1 to score
                 }
                 else
-                {
+                {               
+                    game.setUserScore(1, -1);
+                    updateScoreBoard();
                     MessageBox.Show("Your SET is NOT valid!");
-                    // subtract 1 from score
                 }
             }
             else
             {
                 MessageBox.Show("You need to have 3 cards selected to declare a SET");
             }
+        }
+
+        private void updateScoreBoard()
+        {
+            player1Score.Text = game.getUserScore(1).ToString();
+            // player2Score.Text = game.getUserScore(2).ToString();
+            // player3Score.Text = game.getUserScore(3).ToString();
+            // player4Score.Text = game.getUserScore(4).ToString();
+            // player5Score.Text = game.getUserScore(5).ToString();
         }
 
         /// <summary>
@@ -172,15 +188,45 @@
             if (pictureBox1.BackColor == Color.Gold)
             {
                 pictureBox1.BackColor = Color.FromArgb(0x575757);
-                // take card out of the set array
-                --cardsSelected;
+                removeCurrentCard(1);               
             }
-            else if (cardsSelected < 3)
+            else if (numCardsSelected < 3)
             {
                 pictureBox1.BackColor = Color.Gold;
-                // add card to set array
-                ++cardsSelected;
+                addCurrentCard(1); 
             }
+        }
+
+        private void addCurrentCard(int v)
+        {
+            currentSet.Add(cardsOnBoard[v - 1]);
+                for(int i = 0; i < 3; i++)
+                {
+                    if (cardsSelected[i] == 0)
+                    {
+                        cardsSelected[i] = v;
+                        break;
+                    }
+                }
+                ++numCardsSelected;
+        }
+
+        private void removeCurrentCard(int v)
+        {
+             for (int i = 0; i < 3; i++)
+                {
+                    if (cardsSelected[i] == v)
+                    {
+                        currentSet.RemoveAt(i);
+                        for (int j = i; j < 2; j++)
+                    {
+                        cardsSelected[j] = cardsSelected[j + 1];
+                    }
+                        cardsSelected[2] = 0;
+                        break;
+                    }
+                }
+                --numCardsSelected;
         }
 
         /// <summary>
@@ -193,12 +239,12 @@
             if (pictureBox2.BackColor == Color.Gold)
             {
                 pictureBox2.BackColor = Color.FromArgb(0x575757);
-                --cardsSelected;
+                removeCurrentCard(2);
             }
-            else if (cardsSelected < 3)
+            else if (numCardsSelected < 3)
             {
                 pictureBox2.BackColor = Color.Gold;
-                ++cardsSelected;
+                addCurrentCard(2);
             }
         }
 
@@ -212,12 +258,12 @@
             if (pictureBox3.BackColor == Color.Gold)
             {
                 pictureBox3.BackColor = Color.FromArgb(0x575757);
-                --cardsSelected;
+                removeCurrentCard(3);
             }
-            else if (cardsSelected < 3)
+            else if (numCardsSelected < 3)
             {
                 pictureBox3.BackColor = Color.Gold;
-                ++cardsSelected;
+                addCurrentCard(3);
             }
         }
 
@@ -231,12 +277,12 @@
             if (pictureBox4.BackColor == Color.Gold)
             {
                 pictureBox4.BackColor = Color.FromArgb(0x575757);
-                --cardsSelected;
+                removeCurrentCard(4);
             }
-            else if (cardsSelected < 3)
+            else if (numCardsSelected < 3)
             {
                 pictureBox4.BackColor = Color.Gold;
-                ++cardsSelected;
+                addCurrentCard(4);
             }
         }
 
@@ -250,12 +296,12 @@
             if (pictureBox5.BackColor == Color.Gold)
             {
                 pictureBox5.BackColor = Color.FromArgb(0x575757);
-                --cardsSelected;
+                removeCurrentCard(5);
             }
-            else if (cardsSelected < 3)
+            else if (numCardsSelected < 3)
             {
                 pictureBox5.BackColor = Color.Gold;
-                ++cardsSelected;
+                addCurrentCard(5);
             }
         }
 
@@ -269,12 +315,12 @@
             if (pictureBox6.BackColor == Color.Gold)
             {
                 pictureBox6.BackColor = Color.FromArgb(0x575757);
-                --cardsSelected;
+                removeCurrentCard(6);
             }
-            else if (cardsSelected < 3)
+            else if (numCardsSelected < 3)
             {
                 pictureBox6.BackColor = Color.Gold;
-                ++cardsSelected;
+                addCurrentCard(6);
             }
         }
 
@@ -288,12 +334,12 @@
             if (pictureBox7.BackColor == Color.Gold)
             {
                 pictureBox7.BackColor = Color.FromArgb(0x575757);
-                --cardsSelected;
+                removeCurrentCard(7);
             }
-            else if (cardsSelected < 3)
+            else if (numCardsSelected < 3)
             {
                 pictureBox7.BackColor = Color.Gold;
-                ++cardsSelected;
+                addCurrentCard(7);
             }
         }
 
@@ -307,12 +353,12 @@
             if (pictureBox8.BackColor == Color.Gold)
             {
                 pictureBox8.BackColor = Color.FromArgb(0x575757);
-                --cardsSelected;
+                removeCurrentCard(8);
             }
-            else if (cardsSelected < 3)
+            else if (numCardsSelected < 3)
             {
                 pictureBox8.BackColor = Color.Gold;
-                ++cardsSelected;
+                addCurrentCard(8);
             }
         }
 
@@ -326,12 +372,12 @@
             if (pictureBox9.BackColor == Color.Gold)
             {
                 pictureBox9.BackColor = Color.FromArgb(0x575757);
-                --cardsSelected;
+                removeCurrentCard(9);
             }
-            else if (cardsSelected < 3)
+            else if (numCardsSelected < 3)
             {
                 pictureBox9.BackColor = Color.Gold;
-                ++cardsSelected;
+                addCurrentCard(9);
             }
         }
 
@@ -345,12 +391,12 @@
             if (pictureBox10.BackColor == Color.Gold)
             {
                 pictureBox10.BackColor = Color.FromArgb(0x575757);
-                --cardsSelected;
+                removeCurrentCard(10);
             }
-            else if (cardsSelected < 3)
+            else if (numCardsSelected < 3)
             {
                 pictureBox10.BackColor = Color.Gold;
-                ++cardsSelected;
+                addCurrentCard(10);
             }
         }
 
@@ -364,12 +410,12 @@
             if (pictureBox11.BackColor == Color.Gold)
             {
                 pictureBox11.BackColor = Color.FromArgb(0x575757);
-                --cardsSelected;
+                removeCurrentCard(11);
             }
-            else if (cardsSelected < 3)
+            else if (numCardsSelected < 3)
             {
                 pictureBox11.BackColor = Color.Gold;
-                ++cardsSelected;
+                addCurrentCard(11);
             }
         }
 
@@ -383,12 +429,12 @@
             if (pictureBox12.BackColor == Color.Gold)
             {
                 pictureBox12.BackColor = Color.FromArgb(0x575757);
-                --cardsSelected;
+                removeCurrentCard(12);
             }
-            else if (cardsSelected < 3)
+            else if (numCardsSelected < 3)
             {
                 pictureBox12.BackColor = Color.Gold;
-                ++cardsSelected;
+                addCurrentCard(12);
             }
         }
     }
