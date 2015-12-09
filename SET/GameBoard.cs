@@ -1,5 +1,6 @@
 ﻿namespace SET
 {
+    using Properties;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel;
@@ -18,22 +19,11 @@
     public partial class GameBoard : Form
     {
         private Processing game = new Processing();
+
         int cardsSelected;
         List<Cards> currentSet = new List<Cards>();
         // create holder for the 12 cards for the game board. These need to be set when we call for a new card to be put on the board.
-        Cards card1 = null;
-        Cards card2 = null;
-        Cards card3 = null;
-        Cards card4 = null;
-        Cards card5 = null;
-        Cards card6 = null;
-        Cards card7 = null;
-        Cards card8 = null;
-        Cards card9 = null;
-        Cards card10 = null;
-        Cards card11 = null;
-        Cards card12 = null;
-        // private int[] options; // dont think we need this since the settings are sent to game when form is created.
+        List<Cards> cardsOnBoard;
 
         /// <summary>
         /// Initializes a new instance of the GameBoard class.
@@ -42,6 +32,8 @@
         {
             InitializeComponent();
             game.startGame(options);
+            cardsOnBoard = new List<Cards>();
+            updateCardsOnBoard();
         }
 
         /// <summary>
@@ -57,17 +49,245 @@
                 if(currentSet.Count() == 3 && game.ConfirmSet(currentSet) == true)
                 {
                     MessageBox.Show("You have a valid set, YAY!");
-                    // add 1 to score
+                    updateCardsOnBoard();
                 }
                 else
                 {
                     MessageBox.Show("Your SET is NOT valid!");
-                    // subtract 1 from score
                 }
+                // Fix this if you use multiple players
+                player1Score.Text = game.getUserScore().ToString();
             }
             else
             {
                 MessageBox.Show("You need to have 3 cards selected to declare a SET");
+            }
+        }
+
+        private void updateCardsOnBoard()
+        {
+            cardsOnBoard = game.getCardsOnBoard();
+            int counter = 0;
+            foreach (Cards card in cardsOnBoard)
+            {
+                ++counter;
+                Image image;
+                image = getImageFromPath(card.Image);
+
+                switch(counter)
+                {
+                    case 1:
+                        pictureBox1.BackgroundImage = image;
+                        break;
+                    case 2:
+                        pictureBox2.BackgroundImage = image;
+                        break;
+                    case 3:
+                        pictureBox3.BackgroundImage = image;
+                        break;
+                    case 4:
+                        pictureBox4.BackgroundImage = image;
+                        break;
+                    case 5:
+                        pictureBox5.BackgroundImage = image;
+                        break;
+                    case 6:
+                        pictureBox6.BackgroundImage = image;
+                        break;
+                    case 7:
+                        pictureBox7.BackgroundImage = image;
+                        break;
+                    case 8:
+                        pictureBox8.BackgroundImage = image;
+                        break;
+                    case 9:
+                        pictureBox9.BackgroundImage = image;
+                        break;
+                    case 10:
+                        pictureBox10.BackgroundImage = image;
+                        break;
+                    case 11:
+                        pictureBox11.BackgroundImage = image;
+                        break;
+                    case 12:
+                        pictureBox12.BackgroundImage = image;
+                        break;
+                }
+            }
+        }
+
+        private Image getImageFromPath(string path)
+        {
+            switch(path)
+            {
+                case "1diabluemp":
+                    return Resources._1_dia_blu_emp;
+                case "1diabluhat":
+                    return Resources._1_dia_blu_hat;
+                case "1diablusol":
+                    return Resources._1_dia_blu_sol;
+                case "1diagreemp":
+                    return Resources._1_dia_gre_emp;
+                case "1diagrehat":
+                    return Resources._1_dia_gre_hat;
+                case "1diagresol":
+                    return Resources._1_dia_gre_sol;
+                case "1diaredemp":
+                    return Resources._1_dia_red_emp;
+                case "1diaredhat":
+                    return Resources._1_dia_red_hat;
+                case "1diaredsol":
+                    return Resources._1_dia_red_sol;
+                case "1ovabluemp":
+                    return Resources._1_ova_blu_emp;
+                case "1ovabluhat":
+                    return Resources._1_ova_blu_hat;
+                case "1ovablusol":
+                    return Resources._1_ova_blu_sol;
+                case "1ovagreemp":
+                    return Resources._1_ova_gre_emp;
+                case "1ovagrehat":
+                    return Resources._1_ova_gre_hat;
+                case "1ovagresol":
+                    return Resources._1_ova_gre_sol;
+                case "1ovaredemp":
+                    return Resources._1_ova_red_emp;
+                case "1ovaredhat":
+                    return Resources._1_ova_red_hat;
+                case "1ovaredsol":
+                    return Resources._1_ova_red_sol;
+                case "1squbluemp":
+                    return Resources._1_squ_blu_emp;
+                case "1squbluhat":
+                    return Resources._1_squ_blu_hat;
+                case "1squblusol":
+                    return Resources._1_squ_blu_sol;
+                case "1squgreemp":
+                    return Resources._1_squ_gre_emp;
+                case "1squgrehat":
+                    return Resources._1_squ_gre_hat;
+                case "1squgresol":
+                    return Resources._1_squ_gre_sol;
+                case "1squredemp":
+                    return Resources._1_squ_red_emp;
+                case "1squredhat":
+                    return Resources._1_squ_red_hat;
+                case "1squredsol":
+                    return Resources._1_squ_red_sol;
+
+                case "2diabluemp":
+                    return Resources._2_dia_blu_emp;
+                case "2diabluhat":
+                    return Resources._2_dia_blu_hat;
+                case "2diablusol":
+                    return Resources._2_dia_blu_sol;
+                case "2diagreemp":
+                    return Resources._2_dia_gre_emp;
+                case "2diagrehat":
+                    return Resources._2_dia_gre_hat;
+                case "2diagresol":
+                    return Resources._2_dia_gre_sol;
+                case "2diaredemp":
+                    return Resources._2_dia_red_emp;
+                case "2diaredhat":
+                    return Resources._2_dia_red_hat;
+                case "2diaredsol":
+                    return Resources._2_dia_red_sol;
+                case "2ovabluemp":
+                    return Resources._2_ova_blu_emp;
+                case "2ovabluhat":
+                    return Resources._2_ova_blu_hat;
+                case "2ovablusol":
+                    return Resources._2_ova_blu_sol;
+                case "2ovagreemp":
+                    return Resources._2_ova_gre_emp;
+                case "2ovagrehat":
+                    return Resources._2_ova_gre_hat;
+                case "2ovagresol":
+                    return Resources._2_ova_gre_sol;
+                case "2ovaredemp":
+                    return Resources._2_ova_red_emp;
+                case "2ovaredhat":
+                    return Resources._2_ova_red_hat;
+                case "2ovaredsol":
+                    return Resources._2_ova_red_sol;
+                case "2squbluemp":
+                    return Resources._2_squ_blu_emp;
+                case "2squbluhat":
+                    return Resources._2_squ_blu_hat;
+                case "2squblusol":
+                    return Resources._2_squ_blu_sol;
+                case "2squgreemp":
+                    return Resources._2_squ_gre_emp;
+                case "2squgrehat":
+                    return Resources._2_squ_gre_hat;
+                case "2squgresol":
+                    return Resources._2_squ_gre_sol;
+                case "2squredemp":
+                    return Resources._2_squ_red_emp;
+                case "2squredhat":
+                    return Resources._2_squ_red_hat;
+                case "2squredsol":
+                    return Resources._2_squ_red_sol;
+
+                case "3diabluemp":
+                    return Resources._3_dia_blu_emp;
+                case "3diabluhat":
+                    return Resources._3_dia_blu_hat;
+                case "3diablusol":
+                    return Resources._3_dia_blu_sol;
+                case "3diagreemp":
+                    return Resources._3_dia_gre_emp;
+                case "3diagrehat":
+                    return Resources._3_dia_gre_hat;
+                case "3diagresol":
+                    return Resources._3_dia_gre_sol;
+                case "3diaredemp":
+                    return Resources._3_dia_red_emp;
+                case "3diaredhat":
+                    return Resources._3_dia_red_hat;
+                case "3diaredsol":
+                    return Resources._3_dia_red_sol;
+                case "3ovabluemp":
+                    return Resources._3_ova_blu_emp;
+                case "3ovabluhat":
+                    return Resources._3_ova_blu_hat;
+                case "3ovablusol":
+                    return Resources._3_ova_blu_sol;
+                case "3ovagreemp":
+                    return Resources._3_ova_gre_emp;
+                case "3ovagrehat":
+                    return Resources._3_ova_gre_hat;
+                case "3ovagresol":
+                    return Resources._3_ova_gre_sol;
+                case "3ovaredemp":
+                    return Resources._3_ova_red_emp;
+                case "3ovaredhat":
+                    return Resources._3_ova_red_hat;
+                case "3ovaredsol":
+                    return Resources._3_ova_red_sol;
+                case "3squbluemp":
+                    return Resources._3_squ_blu_emp;
+                case "3squbluhat":
+                    return Resources._3_squ_blu_hat;
+                case "3squblusol":
+                    return Resources._3_squ_blu_sol;
+                case "3squgreemp":
+                    return Resources._3_squ_gre_emp;
+                case "3squgrehat":
+                    return Resources._3_squ_gre_hat;
+                case "3squgresol":
+                    return Resources._3_squ_gre_sol;
+                case "3squredemp":
+                    return Resources._3_squ_red_emp;
+                case "3squredhat":
+                    return Resources._3_squ_red_hat;
+                case "3squredsol":
+                    return Resources._3_squ_red_sol;
+
+                default:
+                    return Resources.Error;
+
             }
         }
 

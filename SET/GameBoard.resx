@@ -694,6 +694,9 @@
         HgiyB0GJcM97FQTOhDKYkQWhj4MUEplN+0AoEajIj4QUUQoKV8jCFg268IUwjKEMZ0jD9AQEADs=
 </value>
   </data>
+  <metadata name="pictureBox2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="pictureBox2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         R0lGODlh+gCWAIUAAIVay45mz+3n9/v5/bac4EQDsGgzv3VFxWw5wZBp0PLt+bGW3lohuVQYt1IVtrif

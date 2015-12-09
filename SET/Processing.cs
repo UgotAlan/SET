@@ -97,7 +97,7 @@
         /// </summary>
         /// <param name="listTwelve">Argument takes List type</param>
         /// <returns>boolean true/false</returns>
-        public bool CheckSet(List<Cards> cardList)
+        private bool CheckSet(List<Cards> cardList)
         {
             // true if valid set, false if invalid
             int counter = 0;

@@ -17,11 +17,23 @@
         // Make initializers for each variable in a constructor.
         private List<Cards> deck;
         private List<Players> players;
-        private List<Cards> cardOnBoard;
+        private List<Cards> cardsOnBoard;
         private bool colorMode;
         private bool beginnerMode;
         private bool tutorialMode;
         private int numberOfSets;
+
+        public Data()
+        {
+            deck = new List<Cards>();
+            players = new List<Players>();
+            players.Add(new Players());
+            cardsOnBoard = new List<Cards>();
+            colorMode = false;
+            beginnerMode = false;
+            tutorialMode = false;
+            numberOfSets = 10;
+        }
 
         public void changeColorMode()
         {
@@ -93,17 +105,22 @@
                                     shade = "sol";
                                     break;
                             }
-                            string path = "_" + number + "_" + shape + "_" + color + "_" + shade;
-                            deck.Add(new Cards(path, color, shade, shape, number));
+                            string path = number + shape + color + shade;
+                            Cards card = new Cards(path, color, shade, shape, number);
+                            deck.Add(card);
                         }
                     }
                 }
             }
+
+            shuffleDeck();
+            for (int i = 0; i < 12; ++i)
+                getNewCard();
         }
         
         public List<Cards> getCardsOnBoard()
         {
-            return cardOnBoard;
+            return cardsOnBoard;
         }
         
         public int getUsers()
@@ -137,10 +154,10 @@
         {
             foreach (Cards card in deck)
             {
-                if (!card.BeenPlayed)
+                if (!card.BeenPlayed && !card.Inplay)
                 {
                     card.Inplay = true;
-                    cardOnBoard.Add(card);
+                    cardsOnBoard.Add(card);
                     return card;
                 }
             }
@@ -152,7 +169,7 @@
             foreach (Cards card in cardList)
             {
                 card.Inplay = false;
-                cardOnBoard.Remove(card);
+                cardsOnBoard.Remove(card);
             }
         }
         
@@ -165,6 +182,7 @@
         public void shuffleDeck()
         {
             var shuffledcards = deck.OrderBy(a => Guid.NewGuid());
+            deck = shuffledcards.ToList();
         }
     }
 }
