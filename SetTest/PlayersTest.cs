@@ -43,8 +43,8 @@
             players.SetsMade.Add(tempList);
             Assert.IsTrue(players.SetsMade.Contains(tempList));
 
-            players.Keybinds.Add('a', 'b');
-            Assert.IsTrue(players.Keybinds['a'] == 'b');
+            players.Keybinds.Add("key", "b");
+            Assert.IsTrue(players.Keybinds["key"] == "b");
         }
     }
 }

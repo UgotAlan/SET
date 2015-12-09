@@ -107,6 +107,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -120,6 +121,249 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_dia_blu_emp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_dia_blu_hat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_dia_blu_sol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_dia_gre_emp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_dia_gre_hat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_dia_gre_sol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_dia_red_emp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_dia_red_hat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_dia_red_sol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_ova_blu_emp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_ova_blu_hat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_ova_blu_sol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_ova_gre_emp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_ova_gre_hat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_ova_gre_sol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_ova_red_emp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_ova_red_hat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_ova_red_sol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_squ_blu_emp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_squ_blu_hat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_squ_blu_sol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_squ_gre_emp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_squ_gre_hat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_squ_gre_sol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_squ_red_emp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_squ_red_hat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_squ_red_sol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_dia_blu_emp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_dia_blu_hat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_dia_blu_sol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_dia_gre_emp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_dia_gre_hat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_dia_gre_sol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_dia_red_emp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_dia_red_hat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_dia_red_sol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_ova_blu_emp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_ova_blu_hat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_ova_blu_sol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_ova_gre_emp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_ova_gre_hat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_ova_gre_sol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_ova_red_emp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_ova_red_hat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_ova_red_sol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_squ_blu_emp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_squ_blu_hat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_squ_blu_sol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_squ_gre_emp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_squ_gre_hat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_squ_gre_sol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_squ_red_emp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_squ_red_hat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_squ_red_sol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_dia_blu_emp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_dia_blu_hat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_dia_blu_sol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_dia_gre_emp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_dia_gre_hat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_dia_gre_sol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_dia_red_emp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_dia_red_hat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_dia_red_sol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_ova_blu_emp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_ova_blu_hat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_ova_blu_sol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_ova_gre_emp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_ova_gre_hat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_ova_gre_sol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_ova_red_emp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_ova_red_hat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_ova_red_sol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_squ_blu_emp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_squ_blu_hat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_squ_blu_sol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_squ_gre_emp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_squ_gre_hat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_squ_gre_sol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_squ_red_emp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_squ_red_hat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3_squ_red_sol.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

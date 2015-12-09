@@ -21,18 +21,8 @@
         int cardsSelected;
         List<Cards> currentSet = new List<Cards>();
         // create holder for the 12 cards for the game board. These need to be set when we call for a new card to be put on the board.
-        Cards card1 = null;
-        Cards card2 = null;
-        Cards card3 = null;
-        Cards card4 = null;
-        Cards card5 = null;
-        Cards card6 = null;
-        Cards card7 = null;
-        Cards card8 = null;
-        Cards card9 = null;
-        Cards card10 = null;
-        Cards card11 = null;
-        Cards card12 = null;
+        private Cards[] cardsOnBoard;
+
         // private int[] options; // dont think we need this since the settings are sent to game when form is created.
 
         /// <summary>
@@ -42,6 +32,21 @@
         {
             InitializeComponent();
             game.startGame(options);
+
+            cardsOnBoard = game.getCardsOnBoard();
+            pictureBox1.BackgroundImage = Image.FromFile(cardsOnBoard[0].Image);
+            pictureBox2.BackgroundImage = Image.FromFile(cardsOnBoard[1].Image);
+            pictureBox3.BackgroundImage = Image.FromFile(cardsOnBoard[2].Image);
+            pictureBox4.BackgroundImage = Image.FromFile(cardsOnBoard[3].Image);
+            pictureBox5.BackgroundImage = Image.FromFile(cardsOnBoard[4].Image);
+            pictureBox6.BackgroundImage = Image.FromFile(cardsOnBoard[5].Image);
+            pictureBox7.BackgroundImage = Image.FromFile(cardsOnBoard[6].Image);
+            pictureBox8.BackgroundImage = Image.FromFile(cardsOnBoard[7].Image);
+            pictureBox9.BackgroundImage = Image.FromFile(cardsOnBoard[8].Image);
+            pictureBox10.BackgroundImage = Image.FromFile(cardsOnBoard[9].Image);
+            pictureBox11.BackgroundImage = Image.FromFile(cardsOnBoard[10].Image);
+            pictureBox12.BackgroundImage = Image.FromFile(cardsOnBoard[11].Image);
+
         }
 
         /// <summary>
@@ -99,8 +104,8 @@
         private void OptionsButtonClick(object sender, EventArgs e)
         {
             // Bring up options dialog
-            GeneralOptions options = new GeneralOptions();
-            options.ShowDialog();
+        //    GeneralOptions options = new GeneralOptions();
+        //    options.ShowDialog();
         }
 
         /// <summary>

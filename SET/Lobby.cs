@@ -38,11 +38,21 @@ namespace SET
             // Logic for starting game.
             int firstOption = -1;
             if (singleColorModeRadioButton.Checked)
+            {
                 firstOption = 0;
+            }
             if (beginnerModeRadioButton.Checked)
+            {
                 firstOption = 1;
+            }
             if (tutorialModeRadioButton.Checked)
+            {
                 firstOption = 2;
+            }
+            if (normalModeRadioButton.Checked)
+            {
+                firstOption = 3;
+            }
 
             int secondOption;
             bool result = Int32.TryParse(numberOfSetsTextBox.Text, out secondOption);
@@ -52,7 +62,7 @@ namespace SET
                 return;
             }
 
-            int[] options = { firstOption, secondOption};
+            int[] options = {firstOption, secondOption};
             this.Hide();
             GameBoard gameBoard = new GameBoard(options);
             gameBoard.ShowDialog();
