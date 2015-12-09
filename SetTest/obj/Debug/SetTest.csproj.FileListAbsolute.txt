@@ -33,3 +33,10 @@ Z:\My Documents\Alan\School\Fall 15\CS 3450\Set Project\SET\SetTest\bin\Debug\Se
 Z:\My Documents\Alan\School\Fall 15\CS 3450\Set Project\SET\SetTest\bin\Debug\SetTest.pdb
 Z:\My Documents\Alan\School\Fall 15\CS 3450\Set Project\SET\SetTest\bin\Debug\SET.exe
 Z:\My Documents\Alan\School\Fall 15\CS 3450\Set Project\SET\SetTest\bin\Debug\SET.pdb
+D:\Personal\School\Second Year\CS 3450\Git\SetTest\bin\Debug\SetTest.dll
+D:\Personal\School\Second Year\CS 3450\Git\SetTest\bin\Debug\SetTest.pdb
+D:\Personal\School\Second Year\CS 3450\Git\SetTest\bin\Debug\SET.exe
+D:\Personal\School\Second Year\CS 3450\Git\SetTest\bin\Debug\SET.pdb
+D:\Personal\School\Second Year\CS 3450\Git\SetTest\obj\Debug\SetTest.csprojResolveAssemblyReference.cache
+D:\Personal\School\Second Year\CS 3450\Git\SetTest\obj\Debug\SetTest.dll
+D:\Personal\School\Second Year\CS 3450\Git\SetTest\obj\Debug\SetTest.pdb

@@ -21,7 +21,6 @@
         private bool colorMode;
         private bool beginnerMode;
         private bool tutorialMode;
-        private bool normalMode;
         private int numberOfSets;
 
         public Data()
@@ -33,7 +32,6 @@
             colorMode = false;
             beginnerMode = false;
             tutorialMode = false;
-            normalMode = true;
             numberOfSets = 10;
         }
 
@@ -56,17 +54,7 @@
         {
             numberOfSets = sets;
         }
-
-        public void setUsers(int v)
-        {
-            // right now just set users to 1
-            for (int i = players.Count; i < v; i++)
-            {
-                players.Add(new Players());
-            }
-            
-        }
-
+        
         public void buildDeck()
         {
             string shape = "temp";
@@ -127,22 +115,11 @@
 
             shuffleDeck();
             for (int i = 0; i < 12; ++i)
-            {
                 getNewCard();
-            }
         }
-
-        internal void setUserSets(List<Cards> set)
-        {
-            players[0].SetsMade.Add(set);
-        }
-
+        
         public List<Cards> getCardsOnBoard()
         {
-            while (cardsOnBoard.Count < 12)
-            {
-                getNewCard();
-            }
             return cardsOnBoard;
         }
         
@@ -158,39 +135,44 @@
         
         public void setUserScore(int score)
         {
-            players[0].Score += score;
+            players[0].Score = score;
         }
 
         public bool checkFinish()
         {
             if (getUserScore() == numberOfSets)
-            {
                 return true;
-            }
-            else
-            {
-                return false;
-            }
+            return false;
         }
         
         public List<List<Cards>> getUserSets()
         {
             return players[0].SetsMade;
         }
-
-        public bool getNewCard()
+        
+        public Cards getNewCard()
         {
+            List<Cards> templist = new List<Cards>();
             foreach (Cards card in deck)
             {
-                if (!card.BeenPlayed)
+                if (!card.BeenPlayed && !card.Inplay)
                 {
                     card.Inplay = true;
-                    card.BeenPlayed = true;
                     cardsOnBoard.Add(card);
-                    return true;
+                    if (cardsOnBoard.Count != 12 || CheckSet(cardsOnBoard))
+                    {
+                        foreach (Cards temp in templist)
+                            temp.Inplay = false;
+                        return card;
+                    }
+                    else
+                    {
+                        cardsOnBoard.Remove(card);
+                        templist.Add(card);
+                    }
                 }
             }
-            return false;
+            return new Cards();
         }
 
         public void removeCardsFromPlay(List<Cards> cardList)
@@ -198,23 +180,97 @@
             foreach (Cards card in cardList)
             {
                 card.Inplay = false;
+                card.BeenPlayed = true;
                 cardsOnBoard.Remove(card);
             }
-            getCardsOnBoard();
         }
         
         public void removePlayedFlags()
         {
             foreach (Cards card in deck)
-            {
                 card.BeenPlayed = false;
-            }
         }
 
         public void shuffleDeck()
         {
-            var shuffledcards = deck.OrderBy(a => Guid.NewGuid());
-            deck = shuffledcards.ToList();
+            List <Cards> newDeck = new List<Cards>();
+            Random rand = new Random();
+            for (int i = 81; i > 0; --i)
+            {
+                int card = rand.Next(0, i);
+                newDeck.Add(deck.ElementAt(card));
+                deck.RemoveAt(card);
+            }
+
+            deck = newDeck;
+        }
+        
+        /// <summary>
+        /// Loops through all possible combinations of 3 cards form the game board to find if
+        /// there is at least one possible set by using method confirmSet.
+        /// </summary>
+        /// <param name="listTwelve">Argument takes List type</param>
+        /// <returns>boolean true/false</returns>
+        public bool CheckSet(List<Cards> cardList)
+        {
+            // true if valid set, false if invalid
+            int counter = 0;
+
+            // sort list by field type (color/number/shade/shape)
+            cardList.Sort((x, y) => x.Color.CompareTo(y.Color));
+
+            // check if color, number, shade, and shape between all 3 cards are the same or all different
+            if (cardList.ElementAt(0).Color == cardList.ElementAt(1).Color && cardList.ElementAt(1).Color == cardList.ElementAt(2).Color)
+            {
+                counter++;
+            }
+            else if (cardList.ElementAt(0).Color != cardList.ElementAt(1).Color && cardList.ElementAt(1).Color != cardList.ElementAt(2).Color)
+            {
+                counter++;
+            }
+
+            cardList.Sort((x, y) => x.Number.CompareTo(y.Number));
+
+            if (cardList.ElementAt(0).Number == cardList.ElementAt(1).Number && cardList.ElementAt(1).Number == cardList.ElementAt(2).Number)
+            {
+                counter++;
+            }
+            else if (cardList.ElementAt(0).Number != cardList.ElementAt(1).Number && cardList.ElementAt(1).Number != cardList.ElementAt(2).Number)
+            {
+                counter++;
+            }
+
+            cardList.Sort((x, y) => x.Shade.CompareTo(y.Shade));
+
+            if (cardList.ElementAt(0).Shade == cardList.ElementAt(1).Shade && cardList.ElementAt(1).Shade == cardList.ElementAt(2).Shade)
+            {
+                counter++;
+            }
+            else if (cardList.ElementAt(0).Shade != cardList.ElementAt(1).Shade && cardList.ElementAt(1).Shade != cardList.ElementAt(2).Shade)
+            {
+                counter++;
+            }
+
+            cardList.Sort((x, y) => x.Shape.CompareTo(y.Shape));
+
+            if (cardList.ElementAt(0).Shape == cardList.ElementAt(1).Shape && cardList.ElementAt(1).Shape == cardList.ElementAt(2).Shape)
+            {
+                counter++;
+            }
+            else if (cardList.ElementAt(0).Shape != cardList.ElementAt(1).Shape && cardList.ElementAt(1).Shape != cardList.ElementAt(2).Shape)
+            {
+                counter++;
+            }
+
+            // check to see if all 4 stipulations to make a set have been satisfied
+            if (counter == 4)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
