@@ -100,8 +100,12 @@
                         if (gameData.getNewCard() == false)
                             gameData.shuffleDeck();
                     }
+                    return true;
                 }
-                return true;
+                else
+                {
+                    return true;
+                }
             }
             else
             {
