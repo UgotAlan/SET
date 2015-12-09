@@ -29,6 +29,15 @@
             BeenPlayed = false;
         }
 
+        public Cards(int number, string color, string shade, string shape)
+        {
+            this.Number = number;
+            this.Color = color;
+            this.Shade = shade;
+            this.Shape = shape;
+            this.Image = "../../../set_cards/" + this.Number.ToString() + "_" + this.Shape + "_" + this.Color + "_" + this.Shade + ".gif";
+        }
+
         /// <summary>
         /// This variable contains a string for the image path 
         /// to the card's visual.

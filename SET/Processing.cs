@@ -24,13 +24,22 @@
         private void setOptions(int[] options)
         {
             if (options[0] == 0)
+            {
                 gameData.changeColorMode();
+            }
             else if (options[0] == 1)
+            {
                 gameData.changeBeginnerMode();
+            }
             else if (options[0] == 2)
+            {
                 gameData.changeTutorialMode();
-            else if (options[0] == 3)
-                gameData.changeTutorialMode();
+            }
+            else // this will defualt to normal mode
+            {
+                gameData.changeNormalMode();
+            }
+
             gameData.changeNumberOfSets(options[1]);
         }
 

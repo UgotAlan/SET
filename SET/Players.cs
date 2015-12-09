@@ -25,7 +25,7 @@
             Mute = false;
             Score = 0;
             SetsMade = new List<List<Cards>>();
-            Keybinds = new Dictionary<char, char>();
+            Keybinds = new Dictionary<string, string>() { { "key", "Space" } };
         }
 
         /// <summary>
@@ -56,7 +56,7 @@
         /// This variable contains a dictionary to hold
         /// the key binds made by the player.
         /// </summary>
-        public Dictionary<char, char> Keybinds { get; set; }
+        public Dictionary<string, string> Keybinds { get; set; }
 
         /// <summary>
         /// This variable contains an integer to

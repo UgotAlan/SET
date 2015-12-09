@@ -26,3 +26,10 @@ C:\Users\daxol\Google Drive\CS3450\GitHub\SET\SetTest\bin\Debug\SET.pdb
 C:\Users\daxol\Google Drive\CS3450\GitHub\SET\SetTest\obj\Debug\SetTest.csprojResolveAssemblyReference.cache
 C:\Users\daxol\Google Drive\CS3450\GitHub\SET\SetTest\obj\Debug\SetTest.dll
 C:\Users\daxol\Google Drive\CS3450\GitHub\SET\SetTest\obj\Debug\SetTest.pdb
+Z:\My Documents\Alan\School\Fall 15\CS 3450\Set Project\SET\SetTest\obj\Debug\SetTest.csprojResolveAssemblyReference.cache
+Z:\My Documents\Alan\School\Fall 15\CS 3450\Set Project\SET\SetTest\obj\Debug\SetTest.dll
+Z:\My Documents\Alan\School\Fall 15\CS 3450\Set Project\SET\SetTest\obj\Debug\SetTest.pdb
+Z:\My Documents\Alan\School\Fall 15\CS 3450\Set Project\SET\SetTest\bin\Debug\SetTest.dll
+Z:\My Documents\Alan\School\Fall 15\CS 3450\Set Project\SET\SetTest\bin\Debug\SetTest.pdb
+Z:\My Documents\Alan\School\Fall 15\CS 3450\Set Project\SET\SetTest\bin\Debug\SET.exe
+Z:\My Documents\Alan\School\Fall 15\CS 3450\Set Project\SET\SetTest\bin\Debug\SET.pdb

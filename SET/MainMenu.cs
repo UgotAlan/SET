@@ -19,18 +19,21 @@
     /// </summary>
     public partial class MainMenu : Form
     {
+        public Players player1 = new Players();
+        
         /// <summary>
         /// Initializes a new instance of the MainMenu class.
         /// </summary>
         public MainMenu()
         {
             InitializeComponent();
+            
         }
 
         private void OptionsLabel_Click(object sender, EventArgs e)
         {
             // make GeneralOptions Form come to top.
-            GeneralOptions options = new GeneralOptions();
+            GeneralOptions options = new GeneralOptions(player1);
             options.ShowDialog();
         }
 
