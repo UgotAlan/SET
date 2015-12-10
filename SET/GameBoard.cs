@@ -6,6 +6,7 @@
     using System.ComponentModel;
     using System.Data;
     using System.Drawing;
+    using System.IO;
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
@@ -44,17 +45,34 @@
         /// <param name="e">The parameter is not used.</param>
         private void SetButtonClick(object sender, EventArgs e)
         {
+            Sounds sound = new Sounds();
+            string directoryName = Path.GetDirectoryName(Directory.GetCurrentDirectory());
+            directoryName = Path.GetDirectoryName(directoryName);
+            directoryName = Path.GetDirectoryName(directoryName);
+            directoryName = directoryName + "\\set_sounds\\sound_options.txt";
+            string text = System.IO.File.ReadAllText(directoryName);
+
             // Set Logic
             if (cardsSelected == 3)
             {
                 if(currentSet.Count() == 3 && game.ConfirmSet(currentSet) == true)
                 {
+                    if (text == "true")
+                    {
+                        sound.PlayRight(true);
+                    }
+
                     MessageBox.Show("You have a valid set, YAY!");
                     updateCardsOnBoard();
                     clearSelectedCards();
                 }
                 else
                 {
+                    if (text == "true")
+                    {
+                        sound.PlayWrong(true);
+                    }
+
                     MessageBox.Show("Your SET is NOT valid!");
                 }
                 // Fix this if you use multiple players

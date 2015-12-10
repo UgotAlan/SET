@@ -5,6 +5,7 @@ namespace SET
     using System.ComponentModel;
     using System.Data;
     using System.Drawing;
+    using System.IO;
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
@@ -50,6 +51,18 @@ namespace SET
             {
                 MessageBox.Show("You must specify how many SETs for the round.");
                 return;
+            }
+
+            Sounds sound = new Sounds();
+            string directoryName = Path.GetDirectoryName(Directory.GetCurrentDirectory());
+            directoryName = Path.GetDirectoryName(directoryName);
+            directoryName = Path.GetDirectoryName(directoryName);
+            directoryName = directoryName + "\\set_sounds\\sound_options.txt";
+            string text = System.IO.File.ReadAllText(directoryName);
+            if (text == "true")
+            {
+                sound.PlayMusicIntro(false);
+                sound.PlayMusic(true);
             }
 
             int[] options = { firstOption, secondOption};

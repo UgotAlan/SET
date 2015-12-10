@@ -5,6 +5,7 @@
     using System.ComponentModel;
     using System.Data;
     using System.Drawing;
+    using System.IO;
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
@@ -42,7 +43,33 @@
         {
             // save settings
             MessageBox.Show("Your settings were saved!");
-            
+
+            // if the mute checkbox is selected and ok is pressed, mute the intro music and all other sounds.
+            Sounds sound = new Sounds();
+            string directoryName = Path.GetDirectoryName(Directory.GetCurrentDirectory());
+            directoryName = Path.GetDirectoryName(directoryName);
+            directoryName = Path.GetDirectoryName(directoryName);
+            directoryName = directoryName + "\\set_sounds\\sound_options.txt";
+
+            if (muteCheckBox.Checked == true)
+            {
+                sound.PlayMusicIntro(false);
+
+                // write to txt file to save settings.
+                using (System.IO.StreamWriter file = new System.IO.StreamWriter(directoryName))
+                {
+                    file.Write("false");
+                }
+            }
+            else
+            {
+                sound.PlayMusicIntro(true);
+                using (System.IO.StreamWriter file = new System.IO.StreamWriter(directoryName))
+                {
+                    file.Write("true");
+                }
+            }
+
             // close otions form
             this.Close();
         }

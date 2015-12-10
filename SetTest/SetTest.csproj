@@ -57,6 +57,7 @@
     <Compile Include="PlayersTest.cs" />
     <Compile Include="ProcessingTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SoundsTests.cs" />
     <Compile Include="TestPingAndRamTests.cs" />
   </ItemGroup>
   <ItemGroup>
