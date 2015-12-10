@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,6 +45,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cards.cs" />
@@ -379,6 +381,42 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right_1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right_2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right_3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right_4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrong_1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrong_2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrong_3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrong_4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrong_5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrong_6.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\music.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\music_intro.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

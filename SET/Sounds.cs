@@ -1,5 +1,6 @@
 ﻿namespace SET
 {
+    using Properties;
     using System;
     using System.Collections.Generic;
     using System.IO;
@@ -22,11 +23,7 @@
         /// <returns>boolean true/false just for unit testing</returns>
         public bool PlayMusic(bool playing)
         {
-            string directoryName = Path.GetDirectoryName(Directory.GetCurrentDirectory());
-            directoryName = Path.GetDirectoryName(directoryName);
-            directoryName = Path.GetDirectoryName(directoryName);
-            directoryName = directoryName + "\\set_sounds\\music.wav";
-            SoundPlayer sound = new SoundPlayer(directoryName);
+            SoundPlayer sound = new SoundPlayer(Resources.music);
 
             if (playing == true)
             {
@@ -48,11 +45,7 @@
         /// <returns>boolean true/false just for unit testing</returns>        
         public bool PlayMusicIntro(bool playing)
         {
-            string directoryName = Path.GetDirectoryName(Directory.GetCurrentDirectory());
-            directoryName = Path.GetDirectoryName(directoryName);
-            directoryName = Path.GetDirectoryName(directoryName);
-            directoryName = directoryName + "\\set_sounds\\music_intro.wav";
-            SoundPlayer sound = new SoundPlayer(directoryName);
+            SoundPlayer sound = new SoundPlayer(Resources.music_intro);
 
             if (playing == true)
             {
