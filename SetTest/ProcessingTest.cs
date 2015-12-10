@@ -49,7 +49,7 @@
             cardList.Insert(1, card2);
             cardList.Insert(2, card3);
 
-            Assert.IsTrue(isSet.ConfirmSet(cardList));
+            Assert.IsTrue(isSet.ConfirmSet(cardList) > 0);
 
             card1.Color = "red";
             card1.Number = 1;
@@ -69,7 +69,7 @@
             cardList.Insert(1, card2);
             cardList.Insert(2, card3);
 
-            Assert.IsFalse(isSet.ConfirmSet(cardList));
+            Assert.IsFalse(isSet.ConfirmSet(cardList) > 0);
         }
     }
 }
