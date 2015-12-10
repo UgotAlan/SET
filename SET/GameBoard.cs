@@ -55,16 +55,24 @@
             // Set Logic
             if (cardsSelected == 3)
             {
-                if(currentSet.Count() == 3 && game.ConfirmSet(currentSet) == true)
+                int set = game.ConfirmSet(currentSet);
+                if (currentSet.Count() == 3 && set > 0)
                 {
                     if (text == "true")
                     {
                         sound.PlayRight(true);
                     }
-
-                    MessageBox.Show("You have a valid set, YAY!");
-                    updateCardsOnBoard();
-                    clearSelectedCards();
+                    if (set == 2)
+                    {
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("You have a valid set, YAY!");
+                        updateCardsOnBoard();
+                        clearSelectedCards();
+                    }
+                   
                 }
                 else
                 {

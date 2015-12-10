@@ -66,7 +66,7 @@
         /// </summary>
         /// <param name="cardList">Argument takes List type</param>
         /// <returns>boolean true/false</returns>
-        public bool ConfirmSet(List<Cards> cardList)
+        public int ConfirmSet(List<Cards> cardList)
         {
             if (gameData.CheckSet(cardList))
             {
@@ -75,7 +75,7 @@
                 {
                     // Win condition
                     MessageBox.Show("Player 1 won the game!");
-                    return false;
+                    return 2;
                 }
                 else
                 {
@@ -85,13 +85,13 @@
                         if (gameData.getNewCard() == new Cards())
                             gameData.shuffleDeck();
                     }
-                    return true;
+                    return 1;
                 }
             }
             else
             {
                 gameData.setUserScore(getUserScore() - 1);
-                return false;
+                return 0;
             }
         }
         
