@@ -64,6 +64,23 @@
                     }
                     if (set == 2)
                     {
+                        if ("Yes" == MessageBox.Show("Do you want to see the sets you made?", "Congratulations?", MessageBoxButtons.YesNo).ToString())
+                        {
+                            var card = game.getUserSets();
+                            string toDisplay = "";
+                            string line = "";
+                            for(int i = 0; i < card.Count; i ++)
+                            {
+                                line = "Set" + i + ": ";
+                                for(int j = 0; j < card[i].Count; j++)
+                                {
+                                    line += card[i][j].Number + "_" + card[i][j].Color + "_" + card[i][j].Shade + "_" + card[i][j].Shape + ", ";
+                                }
+                                toDisplay = string.Join(Environment.NewLine, line);
+                            }
+                           
+                            MessageBox.Show(toDisplay);
+                        }
                         this.Close();
                     }
                     else

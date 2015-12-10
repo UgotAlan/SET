@@ -319,6 +319,7 @@
             // check to see if all 4 stipulations to make a set have been satisfied
             if (counter == 4)
             {
+                players[0].addSet(cardList);
                 return true;
             }
             else

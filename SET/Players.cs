@@ -63,5 +63,10 @@
         /// store the player's score.
         /// </summary>
         public int Score { get; set; }
+
+        internal void addSet(List<Cards> cardList)
+        {
+            this.SetsMade.Add(cardList);
+        }
     }
 }
